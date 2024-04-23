@@ -5,7 +5,11 @@ VisualStudioVersion = 17.8.34525.116
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{846FD871-35A7-4DBF-8C53-70C73284B018}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{D98AADA4-AD7E-42B3-B0A8-BCC8EF51F837}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "Domain\Domain.csproj", "{D98AADA4-AD7E-42B3-B0A8-BCC8EF51F837}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Application\Application.csproj", "{4605F506-10B5-4741-8011-76E267E0CC0B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{818F32F3-6A70-41EE-8481-DC2780C19EA5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,12 +21,22 @@ Global
 		{D98AADA4-AD7E-42B3-B0A8-BCC8EF51F837}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D98AADA4-AD7E-42B3-B0A8-BCC8EF51F837}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D98AADA4-AD7E-42B3-B0A8-BCC8EF51F837}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4605F506-10B5-4741-8011-76E267E0CC0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4605F506-10B5-4741-8011-76E267E0CC0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4605F506-10B5-4741-8011-76E267E0CC0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4605F506-10B5-4741-8011-76E267E0CC0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{818F32F3-6A70-41EE-8481-DC2780C19EA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{818F32F3-6A70-41EE-8481-DC2780C19EA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{818F32F3-6A70-41EE-8481-DC2780C19EA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{818F32F3-6A70-41EE-8481-DC2780C19EA5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{D98AADA4-AD7E-42B3-B0A8-BCC8EF51F837} = {846FD871-35A7-4DBF-8C53-70C73284B018}
+		{4605F506-10B5-4741-8011-76E267E0CC0B} = {846FD871-35A7-4DBF-8C53-70C73284B018}
+		{818F32F3-6A70-41EE-8481-DC2780C19EA5} = {846FD871-35A7-4DBF-8C53-70C73284B018}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C7FB4A5F-F4B5-43EF-84BF-A0BF4DB75A11}
