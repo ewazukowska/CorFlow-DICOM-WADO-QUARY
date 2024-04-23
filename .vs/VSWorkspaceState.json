@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\CorFlow-Backend"
+    "\\CorFlow-Backend",
+    "\\CorFlow-Backend\\Infrastructure",
+    "\\CorFlow-Backend\\Presentation"
   ],
-  "SelectedNode": "\\CorFlow-Backend\\CorFlow-Backend.sln",
+  "SelectedNode": "\\CorFlow-Backend\\Presentation\\DependencyInjection.cs",
   "PreviewInSolutionExplorer": false
 }
