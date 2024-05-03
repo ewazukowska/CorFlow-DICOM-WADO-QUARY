@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\PanSt\\source\\repos\\ewazukowska\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4605F506-10B5-4741-8011-76E267E0CC0B}|Application\\Application.csproj|c:\\users\\panst\\source\\repos\\ewazukowska\\corflow-dicom-wado-quary\\corflow-backend\\application\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4605F506-10B5-4741-8011-76E267E0CC0B}|Application\\Application.csproj|solutionrelative:application\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C36D042-D954-416A-A429-DB020BAEBC51}|WebApi\\WebApi.csproj|c:\\users\\panst\\source\\repos\\ewazukowska\\corflow-dicom-wado-quary\\corflow-backend\\webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C36D042-D954-416A-A429-DB020BAEBC51}|WebApi\\WebApi.csproj|solutionrelative:webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C36D042-D954-416A-A429-DB020BAEBC51}|WebApi\\WebApi.csproj|c:\\users\\panst\\source\\repos\\ewazukowska\\corflow-dicom-wado-quary\\corflow-backend\\webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{7C36D042-D954-416A-A429-DB020BAEBC51}|WebApi\\WebApi.csproj|solutionrelative:webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16361B80-E151-4179-8A90-D36B780E8A16}|Presentation\\Presentation.csproj|c:\\users\\panst\\source\\repos\\ewazukowska\\corflow-dicom-wado-quary\\corflow-backend\\presentation\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16361B80-E151-4179-8A90-D36B780E8A16}|Presentation\\Presentation.csproj|solutionrelative:presentation\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{818F32F3-6A70-41EE-8481-DC2780C19EA5}|Infrastructure\\Infrastructure.csproj|c:\\users\\panst\\source\\repos\\ewazukowska\\corflow-dicom-wado-quary\\corflow-backend\\infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{818F32F3-6A70-41EE-8481-DC2780C19EA5}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\PanSt\\source\\repos\\ewazukowska\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\WebApi\\appsettings.json",
+              "RelativeDocumentMoniker": "WebApi\\appsettings.json",
+              "ToolTip": "C:\\Users\\PanSt\\source\\repos\\ewazukowska\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\WebApi\\appsettings.json",
+              "RelativeToolTip": "WebApi\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-03T14:54:54.942Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "C:\\Users\\PanSt\\source\\repos\\ewazukowska\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\Presentation\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "Presentation\\DependencyInjection.cs",
+              "ToolTip": "C:\\Users\\PanSt\\source\\repos\\ewazukowska\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\Presentation\\DependencyInjection.cs",
+              "RelativeToolTip": "Presentation\\DependencyInjection.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-03T14:33:58.486Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "C:\\Users\\PanSt\\source\\repos\\ewazukowska\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\Infrastructure\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\DependencyInjection.cs",
+              "ToolTip": "C:\\Users\\PanSt\\source\\repos\\ewazukowska\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\Infrastructure\\DependencyInjection.cs",
+              "RelativeToolTip": "Infrastructure\\DependencyInjection.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-03T14:33:53.646Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "C:\\Users\\PanSt\\source\\repos\\ewazukowska\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\Application\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "Application\\DependencyInjection.cs",
+              "ToolTip": "C:\\Users\\PanSt\\source\\repos\\ewazukowska\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\Application\\DependencyInjection.cs",
+              "RelativeToolTip": "Application\\DependencyInjection.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-03T14:33:45.391Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\PanSt\\source\\repos\\ewazukowska\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\WebApi\\Program.cs",
+              "RelativeDocumentMoniker": "WebApi\\Program.cs",
+              "ToolTip": "C:\\Users\\PanSt\\source\\repos\\ewazukowska\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\WebApi\\Program.cs",
+              "RelativeToolTip": "WebApi\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-03T14:25:49.075Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

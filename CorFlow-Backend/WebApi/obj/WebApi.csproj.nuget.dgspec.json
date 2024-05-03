@@ -118,6 +118,12 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "JsonApiDotNetCore": {
+              "target": "Package",
+              "version": "[5.5.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -321,6 +327,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "JsonApiDotNetCore": {
+              "target": "Package",
+              "version": "[5.5.1, )"
+            },
             "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
               "target": "Package",
               "version": "[1.19.6, )"
@@ -336,6 +346,10 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.4.0, )"
+            },
+            "fo-dicom": {
+              "target": "Package",
+              "version": "[5.1.2, )"
             }
           },
           "imports": [
