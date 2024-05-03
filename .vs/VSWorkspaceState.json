@@ -2,9 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\CorFlow-Backend",
-    "\\CorFlow-Backend\\Infrastructure",
-    "\\CorFlow-Backend\\Presentation"
+    "\\CorFlow-Backend\\WebApi"
   ],
-  "SelectedNode": "\\CorFlow-Backend\\Presentation\\DependencyInjection.cs",
+  "SelectedNode": "\\CorFlow-Backend\\WebApi\\Program.cs",
   "PreviewInSolutionExplorer": false
 }

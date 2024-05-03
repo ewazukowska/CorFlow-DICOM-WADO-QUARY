@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vsAywvTJWhZp/Kds7ALB1k/+tuMxz9kfUhgr50Clhkvk3iF8SQJhklnszYKbakMekM2oo9GR2PRUaNFlQHwAFw==",
+  "dgSpecHash": "g6eWoLbjtDlg9IJDElC9R7qm8MjazUn757YJ3+Mb2yHBvfj9um34T6JQaO1c8iZuqRqag4CVkpNpNfHPqdWKyA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Adam\\Source\\Repos\\ewazukowska\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\Domain\\Domain.csproj",
+  "projectFilePath": "C:\\Users\\PanSt\\source\\repos\\ewazukowska\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\Domain\\Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

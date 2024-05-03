@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "uw7r8R2/cKJrAUur/Jr7GhrE88RWh7wEOLu6xW0rH1tyUgXc8GSjr6ScdGqFUqYd+4TGQVEnbklTnZI2Kz2DxA==",
+  "dgSpecHash": "8Mp/PR5PS4BhMasnMde4j4jm9LuBnT/XrH4mr43Qh0i6XOq83qLWNrJxHVlut2vmXx+xLHhF26wzRcOs5yBmSg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Adam\\Source\\Repos\\ewazukowska\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\Presentation\\Presentation.csproj",
+  "projectFilePath": "C:\\Users\\PanSt\\source\\repos\\ewazukowska\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\Presentation\\Presentation.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Adam\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.1\\microsoft.extensions.dependencyinjection.abstractions.8.0.1.nupkg.sha512"
+    "C:\\Users\\PanSt\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.1\\microsoft.extensions.dependencyinjection.abstractions.8.0.1.nupkg.sha512"
   ],
   "logs": []
 }

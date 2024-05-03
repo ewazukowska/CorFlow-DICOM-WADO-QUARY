@@ -1,14 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "cZ/YLEwaJqhBezeCCuK5M/Egg1he7518WxtWgNhloNaac1My0s+tc4Vb+HD+WJWhEs4D1h2E8YVaCXFYNWfFVA==",
+  "dgSpecHash": "2SifooHkVSkhq8QyTIrqIFhJgdkJQCNwpzMVMmKsDAGsbAnKOIM1iSVZY1i2lB4wdhM0W0U9gpR2lpxR/G9D4Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Adam\\Source\\Repos\\ewazukowska\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\Application\\Application.csproj",
+  "projectFilePath": "C:\\Users\\PanSt\\source\\repos\\ewazukowska\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\Application\\Application.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Adam\\.nuget\\packages\\fluentvalidation\\11.9.0\\fluentvalidation.11.9.0.nupkg.sha512",
-    "C:\\Users\\Adam\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.9.0\\fluentvalidation.dependencyinjectionextensions.11.9.0.nupkg.sha512",
-    "C:\\Users\\Adam\\.nuget\\packages\\mediatr\\12.2.0\\mediatr.12.2.0.nupkg.sha512",
-    "C:\\Users\\Adam\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
-    "C:\\Users\\Adam\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512"
+    "C:\\Users\\PanSt\\.nuget\\packages\\fluentvalidation\\11.9.0\\fluentvalidation.11.9.0.nupkg.sha512",
+    "C:\\Users\\PanSt\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.9.0\\fluentvalidation.dependencyinjectionextensions.11.9.0.nupkg.sha512",
+    "C:\\Users\\PanSt\\.nuget\\packages\\mediatr\\12.2.0\\mediatr.12.2.0.nupkg.sha512",
+    "C:\\Users\\PanSt\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
+    "C:\\Users\\PanSt\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512"
   ],
   "logs": []
 }
