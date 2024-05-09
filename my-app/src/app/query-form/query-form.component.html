@@ -3,7 +3,8 @@
   <div class="form-column">
     <h2>Please enter your query:</h2>
     <input type="text" name="queryInput" class="form-input" placeholder="Enter your query...">
-    <button type="submit" class="form-button">Submit</button>
+    <button class="button" (click)="submitQuery()">Submit</button>
+    <router-outlet></router-outlet>
   </div>
 
   <div class="form-column">
@@ -55,4 +56,5 @@
       </label>
     </div>
   </div>
+  <router-outlet></router-outlet>
 </div>
