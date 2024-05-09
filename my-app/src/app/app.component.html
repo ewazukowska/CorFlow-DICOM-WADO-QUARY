@@ -1,64 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
+<!-- app.component.html -->
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CorFlow DICOM WADO QUARY</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f0f0f0;
-    }
+<!-- Główny kontener aplikacji -->
+<div class="app-container">
 
-    .container {
-      max-width: 800px;
-      margin: 50px auto;
-      padding: 20px;
-      background-color: #fff;
-      border-radius: 5px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
+  <!-- Nagłówek -->
+  <header>
+    <h1>Moja aplikacja</h1>
+  </header>
 
-    h1 {
-      text-align: center;
-      color: #333;
-    }
+  <!-- Zawartość aplikacji -->
+  <main>
+    <!-- Tutaj mogą być dynamicznie renderowane komponenty, np. za pomocą dyrektywy routerLink -->
+    <router-outlet></router-outlet>
+  </main>
 
-    p {
-      text-align: center;
-      color: #666;
-    }
 
-    .button {
-      display: block;
-      width: 200px;
-      margin: 20px auto;
-      padding: 10px 20px;
-      text-align: center;
-      color: #fff;
-      background-color: #007bff;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      text-decoration: none;
-    }
-
-    .button:hover {
-      background-color: #0056b3;
-    }
-  </style>
-</head>
-
-<body>
-<div class="container">
-  <h1>CorFlow DICOM WADO QUARY</h1>
-  <p>Project designed to simplify access, processing, and management of medical images in DICOM format.</p>
-  <button class="button" (click)="navigateToQueryForm()">Enter</button>
 </div>
-</body>
-
-</html>
-
