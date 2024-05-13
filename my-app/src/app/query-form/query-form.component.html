@@ -1,0 +1,60 @@
+<!-- app.component.html -->
+<div class="form-container">
+  <div class="form-column">
+    <h2>Please enter your query:</h2>
+    <input type="text" name="queryInput" class="form-input" placeholder="Enter your query...">
+    <button class="button" (click)="submitQuery()">Submit</button>
+    <router-outlet></router-outlet>
+  </div>
+
+  <div class="form-column">
+    <div class="form-checkbox-group">
+      <h2>Patient's Information:</h2>
+      <label class="form-checkbox">
+        <input type="checkbox" name="filter1" value="filter1">
+        Filter 1
+      </label>
+      <label class="form-checkbox">
+        <input type="checkbox" name="filter2" value="filter2">
+        Filter 2
+      </label>
+      <label class="form-checkbox">
+        <input type="checkbox" name="filter3" value="filter3">
+        Filter 3
+      </label>
+    </div>
+
+    <div class="form-checkbox-group">
+      <h2>Study Description:</h2>
+      <label class="form-checkbox">
+        <input type="checkbox" name="filter4" value="filter4">
+        Filter 4
+      </label>
+      <label class="form-checkbox">
+        <input type="checkbox" name="filter5" value="filter5">
+        Filter 5
+      </label>
+      <label class="form-checkbox">
+        <input type="checkbox" name="filter6" value="filter6">
+        Filter 6
+      </label>
+    </div>
+
+    <div class="form-checkbox-group">
+      <h2>Frame feedback:</h2>
+      <label class="form-checkbox">
+        <input type="checkbox" name="filter7" value="filter7">
+        Filter 7
+      </label>
+      <label class="form-checkbox">
+        <input type="checkbox" name="filter8" value="filter8">
+        Filter 8
+      </label>
+      <label class="form-checkbox">
+        <input type="checkbox" name="filter9" value="filter9">
+        Filter 9
+      </label>
+    </div>
+  </div>
+  <router-outlet></router-outlet>
+</div>
