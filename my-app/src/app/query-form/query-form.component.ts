@@ -1,6 +1,6 @@
 // query-form.component.ts
 
-import { Component } from '@angular/core';
+import {Component, HostListener} from '@angular/core';
 import {Router, RouterOutlet} from "@angular/router";
 
 @Component({
@@ -12,8 +12,18 @@ import {Router, RouterOutlet} from "@angular/router";
   ],
   styleUrls: ['./query-form.component.css']
 })
+
+
 export class QueryFormComponent {
   constructor(public router: Router) { }
+
+
+  @HostListener('document:keydown.enter', ['$event'])
+  handleEnterKey(event: KeyboardEvent) {
+    console.log('Wciśnięto klawisz Enter');
+    this.submitQuery();
+  }
+
   query: string = '';
 
   submitQuery() {

@@ -15,11 +15,11 @@ export class HomeComponent {
 
   constructor(public router: Router) { }
 
-  // @HostListener('document:keydown.enter', ['$event'])
-  // handleEnterKey(event: KeyboardEvent) {
-  //   console.log('Wciśnięto klawisz Enter');
-  //   this.navigateToQueryForm();
-  // }
+  @HostListener('document:keydown.enter', ['$event'])
+  handleEnterKey(event: KeyboardEvent) {
+    console.log('Wciśnięto klawisz Enter');
+    this.navigateToQueryForm();
+  }
 
   navigateToQueryForm() {
     this.router.navigate(['query-form']).then((success) => {
