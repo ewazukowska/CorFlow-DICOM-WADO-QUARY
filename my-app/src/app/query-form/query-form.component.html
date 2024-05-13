@@ -8,15 +8,16 @@
   </div>
 
   <div class="form-column">
+      <h2>Or choose between filters:</h2>
     <div class="form-checkbox-group">
       <h2>Patient's Information:</h2>
       <label class="form-checkbox">
         <input type="checkbox" name="filter1" value="filter1">
-        Filter 1
+        Sex
       </label>
       <label class="form-checkbox">
         <input type="checkbox" name="filter2" value="filter2">
-        Filter 2
+        Age
       </label>
       <label class="form-checkbox">
         <input type="checkbox" name="filter3" value="filter3">
@@ -55,6 +56,7 @@
         Filter 9
       </label>
     </div>
+    <button class="button" (click)="filterQuery()">Submit</button>
   </div>
   <router-outlet></router-outlet>
 </div>

@@ -2,12 +2,15 @@
   <h1>Image Viewer</h1>
   <p>Here are the images and their information:</p>
   <div class="image-container">
-    <!-- Image cards will be dynamically generated here -->
-    <!-- Example image card -->
-    <!-- <div class="image-card">
-        <img src="path_to_image.jpg" alt="Image">
-        <h2>Image Title</h2>
-        <p>Description of the image.</p>
-    </div> -->
+    <button class="prev" (click)="prevSlide()">❮ Prev</button>
+    <div class="image-slider">
+      <!-- Image cards will be dynamically generated here -->
+      <div class="image-card" *ngFor="let image of images; let i = index" [style.display]="currentIndex === i ? 'block' : 'none'">
+        <img [src]=image.src alt="Image">
+        <h2>{{image.title}}</h2>
+        <p>{{image.description}}</p>
+      </div>
+    </div>
+    <button class="next" (click)="nextSlide()">Next ❯</button>
   </div>
 </div>

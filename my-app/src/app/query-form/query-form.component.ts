@@ -35,4 +35,15 @@ export class QueryFormComponent {
       }
     });
   }
+
+  filterQuery() {
+    this.router.navigate(['results']).then((success) => {
+      if (success) {
+        console.log('Navigated to results successfully!');
+      } else {
+        console.log('Navigation failed!');
+      }
+    });
+  }
+
 }

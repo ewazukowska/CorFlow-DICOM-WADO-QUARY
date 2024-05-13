@@ -8,6 +8,8 @@ import { AppComponent }  from './app.component';
 import { HomeComponent } from "./home/home.component";
 import { QueryFormComponent } from './query-form/query-form.component';
 import {routes} from "./app.routes";
+import {ResultComponent} from "./result/result.component";
+import {CommonModule} from "@angular/common";
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import {routes} from "./app.routes";
     BrowserModule,
     AppRoutingModule,
     QueryFormComponent,
-    HomeComponent
+    HomeComponent,
+    ResultComponent,
+    CommonModule
   ],
   exports: [
     RouterModule,

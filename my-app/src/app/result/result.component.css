@@ -10,23 +10,30 @@
 h1 {
   text-align: center;
   color: #333;
+  font-size: 24px; /* Przykładowy rozmiar czcionki dla nagłówka */
 }
 
 p {
   text-align: center;
   color: #666;
+  font-size: 16px; /* Przykładowy rozmiar czcionki dla akapitu */
 }
 
 .image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-slider {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 20px;
+  transition: transform 0.5s ease;
 }
 
 .image-card {
-  width: 200px;
-  margin: 10px;
+  flex: 0 0 auto;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
   padding: 10px;
   background-color: #f9f9f9;
   border-radius: 5px;
@@ -37,15 +44,43 @@ p {
   max-width: 100%;
   height: auto;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .image-card h2 {
   text-align: center;
   margin-top: 10px;
   color: #333;
+  font-size: 18px; /* Przykładowy rozmiar czcionki dla tytułu obrazu */
 }
 
 .image-card p {
   text-align: center;
   color: #666;
+  font-size: 14px; /* Przykładowy rozmiar czcionki dla opisu obrazu */
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #333;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
 }
