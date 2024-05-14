@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HbuaT33BSTmGmS+yltxWYTIm0+8jsVzfaifyixswixKnHxfb5snXGz/h7L84MFqe6KFnMDUHMgT71KtqSlcbAw==",
+  "dgSpecHash": "ys0WRCxdkV2WkNo7cTTE7aBvVBHbbSzx9x48MQF1mqjb68iY5rWg5dGVlkoP8q3iI6GxoYdOoszR0T/oyRtTJQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Adam\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\WebApi\\WebApi.csproj",
+  "projectFilePath": "C:\\Users\\Adam\\CorFlow-DICOM-WADO-QUARY-1\\CorFlow-Backend\\WebApi\\WebApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Adam\\.nuget\\packages\\ben.demystifier\\0.4.1\\ben.demystifier.0.4.1.nupkg.sha512",
     "C:\\Users\\Adam\\.nuget\\packages\\communitytoolkit.highperformance\\8.2.2\\communitytoolkit.highperformance.8.2.2.nupkg.sha512",
