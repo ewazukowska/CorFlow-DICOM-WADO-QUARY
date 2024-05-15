@@ -3673,6 +3673,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
+          "Application": "1.0.0",
+          "Domain": "1.0.0",
           "Microsoft.EntityFrameworkCore": "8.0.4",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.1"
         },

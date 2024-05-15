@@ -1,5 +1,6 @@
-using Application;
+using Application; 
 using Domain.DicomImages;
+using DicomFile;
 using System.Threading.Tasks;
 
 namespace Application.Interfaces
