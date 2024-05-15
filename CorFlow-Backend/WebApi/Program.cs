@@ -3,6 +3,7 @@ using Application.Interfaces;
 using Infrastructure;
 using Infrastructure.Data;
 using Infrastructure.Repositories;
+using JsonApiDotNetCore.Configuration;
 using Microsoft.EntityFrameworkCore;
 using Presentation;
 using Serilog;
@@ -17,6 +18,7 @@ internal class Program
             options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
         builder.Services.AddScoped<IDicomFileRepository, DicomFileRepository>();
+        builder.Services.AddScoped<ILesionService, LesionService>();
 
         builder.Services.AddControllers();
         builder.Services.AddEndpointsApiExplorer();
@@ -29,6 +31,8 @@ internal class Program
 
         builder.Host.UseSerilog((context, configuration) =>
             configuration.ReadFrom.Configuration(context.Configuration));
+
+        builder.Services.AddJsonApi<ApplicationDbContext>();
 
         var app = builder.Build();
 
