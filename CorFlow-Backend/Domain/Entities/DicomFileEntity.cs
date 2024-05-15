@@ -1,7 +1,3 @@
-using JsonApiDotNetCore.Resources;
-using JsonApiDotNetCore.Resources.Annotations;
-using System.Collections.Generic;
-
 namespace DicomFile
 {
     public class DicomFileEntity

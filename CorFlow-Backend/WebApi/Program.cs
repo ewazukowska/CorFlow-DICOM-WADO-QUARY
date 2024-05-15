@@ -17,7 +17,9 @@ internal class Program
         builder.Services.AddDbContext<ApplicationDbContext>(options =>
             options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-        builder.Services.AddScoped<IDicomFileRepository, DicomFileRepository>();
+        builder.Services.AddHealthChecks()
+          .AddSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+
         builder.Services.AddScoped<ILesionService, LesionService>();
 
         builder.Services.AddControllers();

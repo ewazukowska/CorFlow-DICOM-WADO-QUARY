@@ -1,25 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Adam\\CorFlow-DICOM-WADO-QUARY-1\\CorFlow-Backend\\WebApi\\WebApi.csproj": {}
+    "C:\\Users\\PanSt\\source\\repos\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\WebApi\\WebApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Adam\\CorFlow-DICOM-WADO-QUARY-1\\CorFlow-Backend\\Application\\Application.csproj": {
+    "C:\\Users\\PanSt\\source\\repos\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Adam\\CorFlow-DICOM-WADO-QUARY-1\\CorFlow-Backend\\Application\\Application.csproj",
+        "projectUniqueName": "C:\\Users\\PanSt\\source\\repos\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "C:\\Users\\Adam\\CorFlow-DICOM-WADO-QUARY-1\\CorFlow-Backend\\Application\\Application.csproj",
-        "packagesPath": "C:\\Users\\Adam\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Adam\\CorFlow-DICOM-WADO-QUARY-1\\CorFlow-Backend\\Application\\obj\\",
+        "projectPath": "C:\\Users\\PanSt\\source\\repos\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\Application\\Application.csproj",
+        "packagesPath": "C:\\Users\\PanSt\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\PanSt\\source\\repos\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\Application\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Adam\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\PanSt\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -27,16 +22,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://nexus.czk.comarch/repository/mdm-nuget/": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Adam\\CorFlow-DICOM-WADO-QUARY-1\\CorFlow-Backend\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\Adam\\CorFlow-DICOM-WADO-QUARY-1\\CorFlow-Backend\\Domain\\Domain.csproj"
+              "C:\\Users\\PanSt\\source\\repos\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\PanSt\\source\\repos\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\Domain\\Domain.csproj"
               }
             }
           }
@@ -85,22 +78,17 @@
         }
       }
     },
-    "C:\\Users\\Adam\\CorFlow-DICOM-WADO-QUARY-1\\CorFlow-Backend\\Domain\\Domain.csproj": {
+    "C:\\Users\\PanSt\\source\\repos\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Adam\\CorFlow-DICOM-WADO-QUARY-1\\CorFlow-Backend\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\PanSt\\source\\repos\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\Adam\\CorFlow-DICOM-WADO-QUARY-1\\CorFlow-Backend\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\Adam\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Adam\\CorFlow-DICOM-WADO-QUARY-1\\CorFlow-Backend\\Domain\\obj\\",
+        "projectPath": "C:\\Users\\PanSt\\source\\repos\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\PanSt\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\PanSt\\source\\repos\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\Domain\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Adam\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\PanSt\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -108,9 +96,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://nexus.czk.comarch/repository/mdm-nuget/": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
@@ -158,22 +144,17 @@
         }
       }
     },
-    "C:\\Users\\Adam\\CorFlow-DICOM-WADO-QUARY-1\\CorFlow-Backend\\Infrastructure\\Infrastructure.csproj": {
+    "C:\\Users\\PanSt\\source\\repos\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\Infrastructure\\Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Adam\\CorFlow-DICOM-WADO-QUARY-1\\CorFlow-Backend\\Infrastructure\\Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\PanSt\\source\\repos\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\Infrastructure\\Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "C:\\Users\\Adam\\CorFlow-DICOM-WADO-QUARY-1\\CorFlow-Backend\\Infrastructure\\Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\Adam\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Adam\\CorFlow-DICOM-WADO-QUARY-1\\CorFlow-Backend\\Infrastructure\\obj\\",
+        "projectPath": "C:\\Users\\PanSt\\source\\repos\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\Infrastructure\\Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\PanSt\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\PanSt\\source\\repos\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Adam\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\PanSt\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -181,19 +162,17 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://nexus.czk.comarch/repository/mdm-nuget/": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Adam\\CorFlow-DICOM-WADO-QUARY-1\\CorFlow-Backend\\Application\\Application.csproj": {
-                "projectPath": "C:\\Users\\Adam\\CorFlow-DICOM-WADO-QUARY-1\\CorFlow-Backend\\Application\\Application.csproj"
+              "C:\\Users\\PanSt\\source\\repos\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\Application\\Application.csproj": {
+                "projectPath": "C:\\Users\\PanSt\\source\\repos\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\Application\\Application.csproj"
               },
-              "C:\\Users\\Adam\\CorFlow-DICOM-WADO-QUARY-1\\CorFlow-Backend\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\Adam\\CorFlow-DICOM-WADO-QUARY-1\\CorFlow-Backend\\Domain\\Domain.csproj"
+              "C:\\Users\\PanSt\\source\\repos\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\PanSt\\source\\repos\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\Domain\\Domain.csproj"
               }
             }
           }
@@ -242,22 +221,17 @@
         }
       }
     },
-    "C:\\Users\\Adam\\CorFlow-DICOM-WADO-QUARY-1\\CorFlow-Backend\\Presentation\\Presentation.csproj": {
+    "C:\\Users\\PanSt\\source\\repos\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\Presentation\\Presentation.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Adam\\CorFlow-DICOM-WADO-QUARY-1\\CorFlow-Backend\\Presentation\\Presentation.csproj",
+        "projectUniqueName": "C:\\Users\\PanSt\\source\\repos\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\Presentation\\Presentation.csproj",
         "projectName": "Presentation",
-        "projectPath": "C:\\Users\\Adam\\CorFlow-DICOM-WADO-QUARY-1\\CorFlow-Backend\\Presentation\\Presentation.csproj",
-        "packagesPath": "C:\\Users\\Adam\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Adam\\CorFlow-DICOM-WADO-QUARY-1\\CorFlow-Backend\\Presentation\\obj\\",
+        "projectPath": "C:\\Users\\PanSt\\source\\repos\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\Presentation\\Presentation.csproj",
+        "packagesPath": "C:\\Users\\PanSt\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\PanSt\\source\\repos\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\Presentation\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Adam\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\PanSt\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -265,9 +239,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://nexus.czk.comarch/repository/mdm-nuget/": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
@@ -315,22 +287,17 @@
         }
       }
     },
-    "C:\\Users\\Adam\\CorFlow-DICOM-WADO-QUARY-1\\CorFlow-Backend\\WebApi\\WebApi.csproj": {
+    "C:\\Users\\PanSt\\source\\repos\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\WebApi\\WebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Adam\\CorFlow-DICOM-WADO-QUARY-1\\CorFlow-Backend\\WebApi\\WebApi.csproj",
+        "projectUniqueName": "C:\\Users\\PanSt\\source\\repos\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\WebApi\\WebApi.csproj",
         "projectName": "WebApi",
-        "projectPath": "C:\\Users\\Adam\\CorFlow-DICOM-WADO-QUARY-1\\CorFlow-Backend\\WebApi\\WebApi.csproj",
-        "packagesPath": "C:\\Users\\Adam\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Adam\\CorFlow-DICOM-WADO-QUARY-1\\CorFlow-Backend\\WebApi\\obj\\",
+        "projectPath": "C:\\Users\\PanSt\\source\\repos\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\WebApi\\WebApi.csproj",
+        "packagesPath": "C:\\Users\\PanSt\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\PanSt\\source\\repos\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\WebApi\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Adam\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\PanSt\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -338,22 +305,20 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://nexus.czk.comarch/repository/mdm-nuget/": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Adam\\CorFlow-DICOM-WADO-QUARY-1\\CorFlow-Backend\\Application\\Application.csproj": {
-                "projectPath": "C:\\Users\\Adam\\CorFlow-DICOM-WADO-QUARY-1\\CorFlow-Backend\\Application\\Application.csproj"
+              "C:\\Users\\PanSt\\source\\repos\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\Application\\Application.csproj": {
+                "projectPath": "C:\\Users\\PanSt\\source\\repos\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\Application\\Application.csproj"
               },
-              "C:\\Users\\Adam\\CorFlow-DICOM-WADO-QUARY-1\\CorFlow-Backend\\Infrastructure\\Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\Adam\\CorFlow-DICOM-WADO-QUARY-1\\CorFlow-Backend\\Infrastructure\\Infrastructure.csproj"
+              "C:\\Users\\PanSt\\source\\repos\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\PanSt\\source\\repos\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\Infrastructure\\Infrastructure.csproj"
               },
-              "C:\\Users\\Adam\\CorFlow-DICOM-WADO-QUARY-1\\CorFlow-Backend\\Presentation\\Presentation.csproj": {
-                "projectPath": "C:\\Users\\Adam\\CorFlow-DICOM-WADO-QUARY-1\\CorFlow-Backend\\Presentation\\Presentation.csproj"
+              "C:\\Users\\PanSt\\source\\repos\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\Presentation\\Presentation.csproj": {
+                "projectPath": "C:\\Users\\PanSt\\source\\repos\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\Presentation\\Presentation.csproj"
               }
             }
           }
@@ -373,6 +338,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "AspNetCore.HealthChecks.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
             "JsonApiDotNetCore": {
               "target": "Package",
               "version": "[5.5.1, )"
