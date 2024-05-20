@@ -9,6 +9,6 @@ namespace Application.Interfaces
 {
     public interface ILesionService
     {
-        Task<List<Lesion>> GetLesionsAsync();
+        Task<List<Lesion>> GetLesionsAsync(Guid id);
     }
 }

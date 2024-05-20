@@ -20,8 +20,14 @@ internal class Program
         builder.Services.AddHealthChecks()
           .AddSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 
-        builder.Services.AddScoped<ILesionService, LesionService>();
+        builder.Services.AddJsonApi<ApplicationDbContext>(options =>
+        {
+            options.Namespace = "api";
+            options.UseRelativeLinks = true;
+            options.AllowUnknownQueryStringParameters = true;
+        });
 
+        builder.Services.AddScoped<ILesionService, LesionService>();
         builder.Services.AddControllers();
         builder.Services.AddEndpointsApiExplorer();
         builder.Services.AddSwaggerGen();

@@ -5,7 +5,7 @@ namespace Application
 {
     public class LesionService : ILesionService
     {
-        public Task<List<Lesion>> GetLesionsAsync()
+        public Task<List<Lesion>> GetLesionsAsync(Guid id)
         {
             throw new NotImplementedException();
         }
