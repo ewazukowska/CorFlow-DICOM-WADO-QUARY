@@ -1,4 +1,4 @@
-// query-form.component.ts
+// filter-form.component.ts
 
 import {Component, HostListener} from '@angular/core';
 import {Router, RouterOutlet} from "@angular/router";
@@ -10,7 +10,7 @@ import {Router, RouterOutlet} from "@angular/router";
   imports: [
     RouterOutlet
   ],
-  styleUrls: ['./query-form.component.css']
+  styleUrls: ['./query-form.component.scss']
 })
 
 

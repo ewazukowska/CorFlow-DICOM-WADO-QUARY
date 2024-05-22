@@ -9,7 +9,7 @@ import {QueryFormComponent} from "../query-form/query-form.component";
   standalone: true,
   imports: [QueryFormComponent, RouterOutlet, RouterLink, RouterLinkActive],
   providers: [ QueryFormComponent ],
-  styleUrls: ['./home.component.css']
+  styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
 
@@ -23,6 +23,15 @@ export class HomeComponent {
 
   navigateToQueryForm() {
     this.router.navigate(['query-form']).then((success) => {
+      if (success) {
+        console.log('Navigated to query-form successfully!');
+      } else {
+        console.log('Navigation failed!');
+      }
+    });
+  }
+  navigateToFilterForm() {
+    this.router.navigate(['filter-form']).then((success) => {
       if (success) {
         console.log('Navigated to query-form successfully!');
       } else {

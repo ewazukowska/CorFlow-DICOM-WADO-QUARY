@@ -1,0 +1,35 @@
+/* styles.css */
+.form-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 2000px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-column {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.form-input {
+  width: calc(100% - 22px);
+  margin-bottom: 10px;
+}
+
+.form-button {
+  width: calc(100% - 22px);
+  margin-top: 10px;
+}
+
+.form-checkbox-group {
+  margin-bottom: 15px;
+  font-size: 12px;
+}
+
+.form-checkbox {
+  margin-bottom: 10px;
+}
