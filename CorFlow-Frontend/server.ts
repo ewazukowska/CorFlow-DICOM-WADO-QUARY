@@ -4,6 +4,7 @@ import express from 'express';
 import { fileURLToPath } from 'node:url';
 import { dirname, join, resolve } from 'node:path';
 import bootstrap from './src/main.server';
+import bodyParser from 'body-parser';
 
 // The Express app is exported so that it can be used by serverless Functions.
 export function app(): express.Express {
@@ -17,8 +18,17 @@ export function app(): express.Express {
   server.set('view engine', 'html');
   server.set('views', browserDistFolder);
 
+  // Use body-parser to parse JSON bodies
+  server.use(bodyParser.json());
+
   // Example Express Rest API endpoints
-  // server.get('/api/**', (req, res) => { });
+  server.post('/api/filters', (req, res) => {
+    const filters = req.body;
+    console.log('Received filters:', filters);
+    // Here you can add logic to handle the filters and query your SQL database
+    res.send({ status: 'success', message: 'Filters received' });
+  });
+
   // Serve static files from /browser
   server.get('*.*', express.static(browserDistFolder, {
     maxAge: '1y'

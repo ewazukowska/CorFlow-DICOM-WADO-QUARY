@@ -3,6 +3,7 @@
 import {Component, HostListener, OnInit} from '@angular/core';
 import {Router, RouterOutlet} from "@angular/router";
 import {FormsModule} from "@angular/forms";
+import { ApiService } from "./api.service";
 
 @Component({
   selector: 'app-filter-form',
@@ -17,7 +18,7 @@ import {FormsModule} from "@angular/forms";
 
 export class FilterFormComponent implements OnInit {
 
-  constructor(public router: Router) { }
+  constructor(public router: Router, private apiService: ApiService) { }
 
   frame: number = 32;
   age: number = 30;
@@ -48,8 +49,35 @@ export class FilterFormComponent implements OnInit {
 
   query: string = '';
 
+  // filterQuery() {
+  //   this.exportFilters()
+  //   const filters = {
+  //     frame: this.frame,
+  //     x: this.x,
+  //     y: this.y,
+  //     width: this.width,
+  //     height: this.height,
+  //     dominance: this.dominance,
+  //     sex: this.sex,
+  //     age: this.age,
+  //     occlusionAge: this.occlusionAge,
+  //     occlusionLength: this.occlusionLength,
+  //     syntaxScore: this.syntaxScore,
+  //     // Add other selected filters here
+  //   };
+  //   console.log('Filters applied:', filters);
+  //   this.saveFilters(filters);
+  //   // Perform the query with the selected filters
+  //   this.router.navigate(['results']).then((success) => {
+  //     if (success) {
+  //       console.log('Navigated to results successfully!');
+  //     } else {
+  //       console.log('Navigation failed!');
+  //     }
+  //   });
+  // }
+
   filterQuery() {
-    this.exportFilters()
     const filters = {
       frame: this.frame,
       x: this.x,
@@ -58,23 +86,14 @@ export class FilterFormComponent implements OnInit {
       height: this.height,
       dominance: this.dominance,
       sex: this.sex,
-      age: this.age,
       occlusionAge: this.occlusionAge,
       occlusionLength: this.occlusionLength,
-      syntaxScore: this.syntaxScore,
-      // Add other selected filters here
     };
-    console.log('Filters applied:', filters);
-    this.saveFilters(filters);
-    // Perform the query with the selected filters
-    this.router.navigate(['results']).then((success) => {
-      if (success) {
-        console.log('Navigated to results successfully!');
-      } else {
-        console.log('Navigation failed!');
-      }
-    });
+    console.log('Wciśnięto klawisz submit');
+    this.apiService.sendFilters(filters);
   }
+
+
 
   saveFilters(filters: any) {
     localStorage.setItem('filters', JSON.stringify(filters));
@@ -122,4 +141,6 @@ export class FilterFormComponent implements OnInit {
     downloadAnchorNode.click();
     downloadAnchorNode.remove();
   }
+
+
 }

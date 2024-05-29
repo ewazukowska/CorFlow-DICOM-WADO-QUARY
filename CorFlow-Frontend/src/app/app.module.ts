@@ -4,12 +4,13 @@ import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app.routes';
-import { AppComponent }  from './app.component';
 import { HomeComponent } from "./home/home.component";
 import { QueryFormComponent } from './query-form/query-form.component';
-import {routes} from "./app.routes";
-import {ResultComponent} from "./result/result.component";
-import {CommonModule} from "@angular/common";
+import { ResultComponent } from "./result/result.component";
+import { CommonModule } from "@angular/common";
+import { HttpClientModule } from '@angular/common/http';
+import {ApiService} from "./filter-form/api.service";
+
 
 @NgModule({
   declarations: [
@@ -22,13 +23,11 @@ import {CommonModule} from "@angular/common";
     QueryFormComponent,
     HomeComponent,
     ResultComponent,
-    CommonModule
+    CommonModule,
+    HttpClientModule
   ],
   exports: [
-    RouterModule,
-    BrowserModule,
-    AppRoutingModule
   ],
-  providers: []
+  providers: [ApiService]
 })
 export class AppModule { }
