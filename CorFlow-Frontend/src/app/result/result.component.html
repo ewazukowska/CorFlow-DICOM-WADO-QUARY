@@ -1,14 +1,21 @@
 <div class="container">
-  <h1>Image Viewer</h1>
-  <p>Here are the images and their information:</p>
-  <div class="image-container">
+  <h1>Data Viewer</h1>
+  <div class="data-container">
     <button class="prev" (click)="prevSlide()">❮ Prev</button>
-    <div class="image-slider">
-      <!-- Image cards will be dynamically generated here -->
-      <div class="image-card" *ngFor="let image of images; let i = index" [style.display]="currentIndex === i ? 'block' : 'none'">
-        <img [src]=image.src alt="Image">
-        <h2>{{image.title}}</h2>
-        <p>{{image.description}}</p>
+    <div class="data-slider">
+      <!-- Data cards will be dynamically generated here -->
+      <div class="data-card" *ngFor="let data of dataList; let i = index" [style.display]="currentIndex === i ? 'block' : 'none'">
+        <h2>{{data.title}}</h2>
+        <table>
+          <tr>
+            <th>Description</th>
+            <td>{{data.description}}</td>
+          </tr>
+          <tr *ngFor="let info of data.info">
+            <th>{{info.key}}</th>
+            <td>{{info.value}}</td>
+          </tr>
+        </table>
       </div>
     </div>
     <button class="next" (click)="nextSlide()">Next ❯</button>

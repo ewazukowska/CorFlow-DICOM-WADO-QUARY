@@ -4,6 +4,8 @@ import {Component, HostListener, OnInit} from '@angular/core';
 import {Router, RouterOutlet} from "@angular/router";
 import {FormsModule} from "@angular/forms";
 import { ApiService } from "./api.service";
+import {NgxSliderModule, Options} from "@angular-slider/ngx-slider";
+import {HttpClientModule} from "@angular/common/http";
 
 @Component({
   selector: 'app-filter-form',
@@ -11,14 +13,16 @@ import { ApiService } from "./api.service";
   standalone: true,
   imports: [
     RouterOutlet,
-    FormsModule
+    FormsModule,
+    NgxSliderModule,
+    HttpClientModule
   ],
   styleUrls: ['./filter-form.component.scss']
 })
 
 export class FilterFormComponent implements OnInit {
 
-  constructor(public router: Router, private apiService: ApiService) { }
+  constructor(public router: Router, public apiService: ApiService) { }
 
   frame: number = 32;
   age: number = 30;
@@ -31,6 +35,28 @@ export class FilterFormComponent implements OnInit {
   occlusionAge: number = 7;
   occlusionLength: number = 7;
   syntaxScore: number = 25;
+
+  // Zakresy
+  ageRange = { min: 0, max: 100 };
+  frameRange = { min: 0, max: 100 };
+  xRange = { min: 0, max: 500 };
+  yRange = { min: 0, max: 500 };
+  widthRange = { min: 0, max: 200 };
+  heightRange = { min: 0, max: 200 };
+  occlusionAgeRange = { min: 0, max: 200 };
+  occlusionLengthRange = { min: 0, max: 200 };
+  syntaxScoreRange = { min: 0, max: 200 };
+
+  ageOptions: Options = { floor: 0, ceil: 100 };
+  frameOptions: Options = { floor: 0, ceil: 100 };
+  xOptions: Options = { floor: 0, ceil: 500 };
+  yOptions: Options = { floor: 0, ceil: 500 };
+  widthOptions: Options = { floor: 0, ceil: 200 };
+  heightOptions: Options = { floor: 0, ceil: 200 };
+  occlusionAgeOptions: Options = { floor: 0, ceil: 200 };
+  occlusionLengthOptions: Options = { floor: 0, ceil: 200 };
+  syntaxScoreOptions: Options = { floor: 0, ceil: 200 };
+
 
   ngOnInit() {
     this.loadFilters();
@@ -91,6 +117,7 @@ export class FilterFormComponent implements OnInit {
     };
     console.log('Wciśnięto klawisz submit');
     this.apiService.sendFilters(filters);
+    console.log('Wysłano filtry');
   }
 
 

@@ -29,37 +29,6 @@ p {
   transition: transform 0.5s ease;
 }
 
-.image-card {
-  flex: 0 0 auto;
-  width: 100%;
-  max-width: 400px;
-  margin: 0 auto;
-  padding: 10px;
-  background-color: #f9f9f9;
-  border-radius: 5px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-}
-
-.image-card img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.image-card h2 {
-  text-align: center;
-  margin-top: 10px;
-  color: #333;
-  font-size: 18px; /* Przykładowy rozmiar czcionki dla tytułu obrazu */
-}
-
-.image-card p {
-  text-align: center;
-  color: #666;
-  font-size: 14px; /* Przykładowy rozmiar czcionki dla opisu obrazu */
-}
-
 .prev, .next {
   position: absolute;
   top: 50%;
@@ -78,9 +47,9 @@ p {
 }
 
 .prev {
-  left: 0;
+  left: 150px;
 }
 
 .next {
-  right: 0;
+  right: 150px;
 }

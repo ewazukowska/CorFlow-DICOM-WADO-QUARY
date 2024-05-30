@@ -1,3 +1,7 @@
+<style>
+  .form-label {
+  }
+</style>
 <div class="form-container">
   <div class="form-column">
     <div class="form-checkbox-group">
@@ -18,137 +22,129 @@
         </select>
       </label>
     </div>
-
   </div>
 
   <div class="form-column">
-    <div class="form-checkbox-group">
-      <label class="form-checkbox">
-        <input type="checkbox" name="filterOcclusion" value="totalOcclusion">
-        Total Occlusion
-      </label>
-    </div>
-    <div class="form-checkbox-group">
-      <label class="form-checkbox">
-        <input type="checkbox" name="filterBluntStump" value="bluntStump">
-        Blunt Stump
-      </label>
-    </div>
-    <div class="form-checkbox-group">
-      <label class="form-checkbox">
-        <input type="checkbox" name="sideBranch" value="sideBranch">
-        Side Branch
-      </label>
-    </div>
-    <div class="form-checkbox-group">
-      <label class="form-checkbox">
-        <input type="checkbox" name="filterBridging" value="bridging">
-        Bridging
-      </label>
-    </div>
-    <div class="form-checkbox-group">
-      <label class="form-checkbox">
-        <input type="checkbox" name="trifurcation" value="trifurcation">
-        Trifurcation
-      </label>
-    </div>
-    <div class="form-checkbox-group">
-      <label class="form-checkbox">
-        <input type="checkbox" name="bifurcation" value="bifurcation">
-        Bifurcation
-      </label>
-    </div>
-    <div class="form-checkbox-group">
-      <label class="form-checkbox">
-        <input type="checkbox" name="filterHeavyCalcification" value="heavyCalcification">
-        Heavy Calcification
-      </label>
-    </div>
-    <div class="form-checkbox-group">
-      <label class="form-checkbox">
-        <input type="checkbox" name="filterThrombus" value="thrombus">
-        Thrombus
-      </label>
-    </div>
-    <div class="form-checkbox-group">
-      <label class="form-checkbox">
-        <input type="checkbox" name="filterSevereTortuosity" value="severeTortuosity">
-        Severe Tortuosity
-      </label>
-    </div>
-    <div class="form-checkbox-group">
-      <label class="form-checkbox">
-        <input type="checkbox" name="aortoOstialStenosis" value="aortoOstialStenosis">
-        Aorto Ostial Stenosis
-      </label>
-    </div>
+      <div class="form-checkbox-group">
+        <label class="form-checkbox">
+          <input type="checkbox" name="filterOcclusion" value="totalOcclusion">
+          Total Occlusion
+        </label>
+      </div>
+      <div class="form-checkbox-group">
+        <label class="form-checkbox">
+          <input type="checkbox" name="filterBluntStump" value="bluntStump">
+          Blunt Stump
+        </label>
+      </div>
+      <div class="form-checkbox-group">
+        <label class="form-checkbox">
+          <input type="checkbox" name="sideBranch" value="sideBranch">
+          Side Branch
+        </label>
+      </div>
+      <div class="form-checkbox-group">
+        <label class="form-checkbox">
+          <input type="checkbox" name="filterBridging" value="bridging">
+          Bridging
+        </label>
+      </div>
+      <div class="form-checkbox-group">
+        <label class="form-checkbox">
+          <input type="checkbox" name="trifurcation" value="trifurcation">
+          Trifurcation
+        </label>
+      </div>
+      <div class="form-checkbox-group">
+        <label class="form-checkbox">
+          <input type="checkbox" name="bifurcation" value="bifurcation">
+          Bifurcation
+        </label>
+      </div>
+      <div class="form-checkbox-group">
+        <label class="form-checkbox">
+          <input type="checkbox" name="filterHeavyCalcification" value="heavyCalcification">
+          Heavy Calcification
+        </label>
+      </div>
+      <div class="form-checkbox-group">
+        <label class="form-checkbox">
+          <input type="checkbox" name="filterThrombus" value="thrombus">
+          Thrombus
+        </label>
+      </div>
+      <div class="form-checkbox-group">
+        <label class="form-checkbox">
+          <input type="checkbox" name="filterSevereTortuosity" value="severeTortuosity">
+          Severe Tortuosity
+        </label>
+      </div>
+      <div class="form-checkbox-group">
+        <label class="form-checkbox">
+          <input type="checkbox" name="aortoOstialStenosis" value="aortoOstialStenosis">
+          Aorto Ostial Stenosis
+        </label>
+      </div>
   </div>
 
   <div class="form-column">
     <div class="form-checkbox-group">
       <label class="form-label">
-        Frame
-        <input type="range" name="age" min="0" max="100" [(ngModel)]="age">
-        <span>{{age}}</span>
+        Age
+        <ngx-slider [(value)]="age" [(highValue)]="ageRange.max" [options]="ageOptions"></ngx-slider>
       </label>
     </div>
     <div class="form-checkbox-group">
       <label class="form-label">
         Frame
-        <input type="range" name="frame" min="0" max="100" [(ngModel)]="frame">
-        <span>{{frame}}</span>
+        <ngx-slider [(value)]="frame" [(highValue)]="frameRange.max" [options]="frameOptions"></ngx-slider>
       </label>
     </div>
     <div class="form-checkbox-group">
       <label class="form-label">
         X Coordinate
-        <input type="range" name="x" min="0" max="500" [(ngModel)]="x">
-        <span>{{x}}</span>
+        <ngx-slider [(value)]="x" [(highValue)]="xRange.max" [options]="xOptions"></ngx-slider>
       </label>
     </div>
     <div class="form-checkbox-group">
       <label class="form-label">
         Y Coordinate
-        <input type="range" name="y" min="0" max="500" [(ngModel)]="y">
-        <span>{{y}}</span>
+        <ngx-slider [(value)]="y" [(highValue)]="yRange.max" [options]="yOptions"></ngx-slider>
       </label>
     </div>
     <div class="form-checkbox-group">
       <label class="form-label">
         Width
-        <input type="range" name="width" min="0" max="200" [(ngModel)]="width">
-        <span>{{width}}</span>
+        <ngx-slider [(value)]="width" [(highValue)]="widthRange.max" [options]="widthOptions"></ngx-slider>
       </label>
     </div>
     <div class="form-checkbox-group">
       <label class="form-label">
         Height
-        <input type="range" name="height" min="0" max="200" [(ngModel)]="height">
-        <span>{{height}}</span>
+        <ngx-slider [(value)]="height" [(highValue)]="heightRange.max" [options]="heightOptions"></ngx-slider>
       </label>
     </div>
     <div class="form-checkbox-group">
-      <label class="form-checkbox">
+      <label class="form-label">
         Occlusion Age
-        <input type="range" name="filterOcclusionAge" min="0" max="200" [(ngModel)]="occlusionAge">
-        <span>{{occlusionAge}}</span>
+        <ngx-slider [(value)]="occlusionAge" [(highValue)]="occlusionAgeRange.max" [options]="occlusionAgeOptions"></ngx-slider>
       </label>
     </div>
     <div class="form-checkbox-group">
-      <label class="form-checkbox">
+      <label class="form-label">
         Occlusion Length
-        <input type="range" name="filterOcclusionLength" min="0" max="200" [(ngModel)]="occlusionLength">
-        <span>{{occlusionLength}}</span>
+        <ngx-slider [(value)]="occlusionLength" [(highValue)]="occlusionLengthRange.max" [options]="occlusionLengthOptions"></ngx-slider>
       </label>
     </div>
     <div class="form-checkbox-group">
-      <label class="form-checkbox">
+      <label class="form-label">
         Syntax Score
-        <input type="range" name="syntaxScore" min="0" max="200" [(ngModel)]="syntaxScore">
-        <span>{{syntaxScore}}</span>
+        <div class="custom-slider">
+        <ngx-slider [(value)]="syntaxScore" [(highValue)]="syntaxScoreRange.max" [options]="syntaxScoreOptions"></ngx-slider>
+        </div>
       </label>
     </div>
   </div>
 </div>
-<button class="button" (click)="filterQuery()">Submit</button>
+<button class="button-submit" (click)="filterQuery()">Submit</button>
 <router-outlet></router-outlet>

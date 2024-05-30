@@ -6,16 +6,21 @@ import { Observable, map } from 'rxjs';
   providedIn: 'root'
 })
 export class ApiService {
-  constructor() {}
+  private apiUrl = 'http://127.0.0.1:4200';
+  constructor(private http: HttpClient) {}
 
   sendFilters(filters: any): void {
-    const endpoint = 'http://localhost:4200/ApiController';
+    const endpoint = `${this.apiUrl}/api/data/`;
 
-    //return this.http.post(endpoint, filters).pipe(
-      map((response: any) => {
-        console.log('Filters sent successfully', response);
-        return response;
-      })
-    //);
+    this.http.post(endpoint, filters).subscribe(
+      (response) => {
+        console.log('Sukces:', response);
+        // Obsłuż otrzymane dane tutaj
+      },
+      (error) => {
+        console.error('Błąd:', error);
+        // Obsłuż błędy tutaj
+      }
+    );
   }
 }

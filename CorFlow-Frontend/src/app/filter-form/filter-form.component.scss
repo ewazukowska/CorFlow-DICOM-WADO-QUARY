@@ -27,9 +27,33 @@
 
 .form-checkbox-group {
   margin-bottom: 15px;
-  font-size: 12px;
+  font-size: 16px;
 }
 
 .form-checkbox {
   margin-bottom: 10px;
+}
+
+.custom-slider {
+  .ngx-slider {
+    .ngx-slider-selection {
+      background: rgb(0, 255, 0) !important;
+    }
+    .ngx-slider-bubble {
+      font-size: 5px;
+    }
+  }
+}
+
+.button-submit {
+  display: block;
+  width: 100px;
+  margin: 20px auto;
+  padding: 10px 20px;
+  color: #fff;
+  background-color: #00008B !important;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
 }

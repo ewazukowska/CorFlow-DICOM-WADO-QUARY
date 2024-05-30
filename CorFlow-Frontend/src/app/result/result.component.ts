@@ -8,19 +8,37 @@ import {CommonModule, NgOptimizedImage} from "@angular/common";
   templateUrl: './result.component.html',
   styleUrl: './result.component.css'
 })
+
 export class ResultComponent {
-  images = [
-    { src: 'path_to_image1.jpg', title: 'Image 1', description: 'Description of image 1' },
-    { src: 'path_to_image1.jpg', title: 'Image 2', description: 'Description of image 2' },
-    // Jak dodać obrazy tu???
+  currentIndex: number = 0;
+
+  dataList = [
+    {
+      title: 'Item 1',
+      description: 'This is the description for item 1.',
+      info: [
+        { key: 'Detail 1', value: 'Value 1' },
+        { key: 'Detail 2', value: 'Value 2' },
+        { key: 'Detail 3', value: 'Value 3' }
+      ]
+    },
+    {
+      title: 'Item 2',
+      description: 'This is the description for item 2.',
+      info: [
+        { key: 'Detail 1', value: 'Value 1' },
+        { key: 'Detail 2', value: 'Value 2' },
+        { key: 'Detail 3', value: 'Value 3' }
+      ]
+    },
+    // Dodaj więcej obiektów według potrzeby
   ];
-  currentIndex = 0;
 
   prevSlide() {
-    this.currentIndex = (this.currentIndex === 0) ? (this.images.length - 1) : (this.currentIndex - 1);
+    this.currentIndex = (this.currentIndex > 0) ? this.currentIndex - 1 : this.dataList.length - 1;
   }
 
   nextSlide() {
-    this.currentIndex = (this.currentIndex === this.images.length - 1) ? 0 : (this.currentIndex + 1);
+    this.currentIndex = (this.currentIndex < this.dataList.length - 1) ? this.currentIndex + 1 : 0;
   }
 }

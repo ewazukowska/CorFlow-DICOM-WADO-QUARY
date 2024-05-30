@@ -9,25 +9,28 @@ import { QueryFormComponent } from './query-form/query-form.component';
 import { ResultComponent } from "./result/result.component";
 import { CommonModule } from "@angular/common";
 import { HttpClientModule } from '@angular/common/http';
-import {ApiService} from "./filter-form/api.service";
-
+import { ApiService } from "./filter-form/api.service";
+import { NgxSliderModule } from '@angular-slider/ngx-slider';
+import { FilterFormComponent } from './filter-form/filter-form.component';
 
 @NgModule({
   declarations: [
-
+    HomeComponent,
+    QueryFormComponent,
+    ResultComponent,
+    FilterFormComponent
   ],
+  exports: [],
   imports: [
     RouterModule,
     BrowserModule,
-    AppRoutingModule,
-    QueryFormComponent,
-    HomeComponent,
-    ResultComponent,
     CommonModule,
+    NgxSliderModule,
     HttpClientModule
   ],
-  exports: [
-  ],
-  providers: [ApiService]
+  providers: [
+    ApiService
+  ]
 })
+
 export class AppModule { }
