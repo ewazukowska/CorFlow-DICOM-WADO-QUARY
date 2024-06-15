@@ -9,7 +9,9 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
-
+.bold {
+  font-weight: bold;
+}
 .container h1 {
   color: #333;
 }
@@ -20,11 +22,11 @@
 
 .button {
   display: block;
-  width: 200px;
+  width: 230px;
   margin: 20px auto;
   padding: 10px 20px;
   color: #fff;
-  background-color: #007bff;
+  background-color: #2F4F4F;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -32,5 +34,9 @@
 }
 
 .button:hover {
-  background-color: #0056b3;
+  background-color: #008080;
+}
+.button-container {
+  display: flex;
+  gap: 12px; /* Adjust the space between buttons as needed */
 }

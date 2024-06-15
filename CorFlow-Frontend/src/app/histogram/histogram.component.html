@@ -1,0 +1,14 @@
+<h2 mat-dialog-title>Select a Variable</h2>
+<mat-dialog-content>
+  <mat-form-field appearance="fill">
+    <mat-select [(ngModel)]="selectedVariable">
+      <mat-option *ngFor="let variable of variables" [value]="variable">
+        {{ variable }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-button (click)="onCancel()">Cancel</button>
+  <button mat-button (click)="onConfirm()">Confirm</button>
+</mat-dialog-actions>

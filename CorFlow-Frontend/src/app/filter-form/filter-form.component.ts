@@ -26,10 +26,7 @@ export class FilterFormComponent implements OnInit {
   //constructor(public router: Router, public apiService: ApiService)
   { }
 
-  frame: number = 32;
   age: number = 30;
-  x: number = 7;
-  y: number = 333;
   width: number = 58;
   height: number = 87;
   dominance: string = 'RIGHT'; // Default value
@@ -40,9 +37,6 @@ export class FilterFormComponent implements OnInit {
 
   // Zakresy
   ageRange = { min: 0, max: 100 };
-  frameRange = { min: 0, max: 100 };
-  xRange = { min: 0, max: 500 };
-  yRange = { min: 0, max: 500 };
   widthRange = { min: 0, max: 200 };
   heightRange = { min: 0, max: 200 };
   occlusionAgeRange = { min: 0, max: 200 };
@@ -50,9 +44,6 @@ export class FilterFormComponent implements OnInit {
   syntaxScoreRange = { min: 0, max: 200 };
 
   ageOptions: Options = { floor: 0, ceil: 100 };
-  frameOptions: Options = { floor: 0, ceil: 100 };
-  xOptions: Options = { floor: 0, ceil: 500 };
-  yOptions: Options = { floor: 0, ceil: 500 };
   widthOptions: Options = { floor: 0, ceil: 200 };
   heightOptions: Options = { floor: 0, ceil: 200 };
   occlusionAgeOptions: Options = { floor: 0, ceil: 200 };
@@ -108,9 +99,6 @@ export class FilterFormComponent implements OnInit {
 
   filterQuery() {
     const filters = {
-      frame: this.frame,
-      x: this.x,
-      y: this.y,
       width: this.width,
       height: this.height,
       dominance: this.dominance,
@@ -133,9 +121,6 @@ export class FilterFormComponent implements OnInit {
     const savedFilters = localStorage.getItem('filters');
     if (savedFilters) {
       const filters = JSON.parse(savedFilters);
-      this.frame = filters.frame || 0;
-      this.x = filters.x || 0;
-      this.y = filters.y || 0;
       this.width = filters.width || 0;
       this.height = filters.height || 0;
       this.dominance = filters.dominance || 'RIGHT';
@@ -150,9 +135,6 @@ export class FilterFormComponent implements OnInit {
 
   exportFilters() {
     const filters = {
-      frame: this.frame,
-      x: this.x,
-      y: this.y,
       width: this.width,
       height: this.height,
       dominance: this.dominance,

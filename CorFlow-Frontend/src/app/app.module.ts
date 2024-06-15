@@ -11,17 +11,25 @@ import { HttpClientModule } from '@angular/common/http';
 import { ApiService } from "./filter-form/api.service";
 import { NgxSliderModule } from '@angular-slider/ngx-slider';
 import { FilterFormComponent } from './filter-form/filter-form.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatDialogModule } from "@angular/material/dialog";
-import { MatButtonModule } from '@angular/material/button';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
-import { FormsModule } from '@angular/forms';
+import { MatButtonModule } from '@angular/material/button';
+import { MatDialogModule } from '@angular/material/dialog';
+import { AppComponent } from './app.component';
+import { HistogramComponent } from './histogram/histogram.component';
+import { FormsModule } from "@angular/forms";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
 @NgModule({
   declarations: [
-
+    AppComponent,
+    HomeComponent,
+    QueryFormComponent,
+    ResultComponent,
+    FilterFormComponent,
+    HistogramComponent
   ],
-  exports: [],
   imports: [
     RouterModule,
     BrowserModule,
@@ -31,16 +39,14 @@ import { FormsModule } from '@angular/forms';
     BrowserAnimationsModule,
     MatDialogModule,
     MatButtonModule,
+    MatFormFieldModule,
+    MatInputModule,
     MatSelectModule,
-    FormsModule,
-    HomeComponent,
-    QueryFormComponent,
-    ResultComponent,
-    FilterFormComponent
+    FormsModule
   ],
   providers: [
     ApiService
-  ]
+  ],
+  bootstrap: [AppComponent]
 })
-
 export class AppModule { }

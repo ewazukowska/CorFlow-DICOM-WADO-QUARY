@@ -24,25 +24,17 @@
   width: calc(100% - 22px);
   margin-top: 10px;
 }
+.dominance-group {
+  margin-bottom: 200px; /* Adjust this value as needed */
+}
 
 .form-checkbox-group {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   font-size: 16px;
 }
 
 .form-checkbox {
   margin-bottom: 10px;
-}
-
-.custom-slider {
-  .ngx-slider {
-    .ngx-slider-selection {
-      background: rgb(0, 255, 0) !important;
-    }
-    .ngx-slider-bubble {
-      font-size: 5px;
-    }
-  }
 }
 
 .button-submit {
@@ -51,9 +43,59 @@
   margin: 20px auto;
   padding: 10px 20px;
   color: #fff;
-  background-color: #00008B !important;
+  background-color: #2F4F4F;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   text-decoration: none;
 }
+.button-submit:hover {
+  background-color: #008080;
+}
+
+// We need to use ::ng-deep to overcome view encapsulation
+::ng-deep {
+  .custom-slider .ngx-slider .ngx-slider-bar {
+    background: #D9EAD9;
+    height: 5px;
+  }
+
+  .custom-slider .ngx-slider .ngx-slider-selection {
+    background: #8FBC8F;
+  }
+
+  .custom-slider .ngx-slider .ngx-slider-pointer {
+    width: 10px;
+    height: 15px;
+    top: auto; /* to remove the default positioning */
+    bottom: 0;
+    background-color: #2F4F4F;
+  }
+
+  .custom-slider .ngx-slider .ngx-slider-pointer:after {
+    display: none;
+  }
+
+  .custom-slider .ngx-slider .ngx-slider-bubble {
+    bottom: 14px;
+  }
+
+  .custom-slider .ngx-slider .ngx-slider-limit {
+    font-weight: bold;
+    color: red;
+  }
+
+  .custom-slider .ngx-slider .ngx-slider-tick {
+    width: 1px;
+    height: 15px;
+    margin-left: 4px;
+    border-radius: 0;
+    background: black;
+    top: -1px;
+  }
+
+  .custom-slider .ngx-slider .ngx-slider-tick.ngx-slider-selected {
+    background: rgb(0, 110, 255);
+  }
+}
+

@@ -1,13 +1,15 @@
 import { Component } from '@angular/core';
 import {CommonModule, NgOptimizedImage} from "@angular/common";
 import {FormsModule} from "@angular/forms";
+import {HistogramComponent} from "../histogram/histogram.component";
+import {MatDialog} from "@angular/material/dialog";
 
 @Component({
   selector: 'app-result',
   standalone: true,
   imports: [CommonModule, NgOptimizedImage, FormsModule],
   templateUrl: './result.component.html',
-  styleUrl: './result.component.css'
+  styleUrl: './result.component.scss'
 })
 
 export class ResultComponent {
@@ -34,6 +36,7 @@ export class ResultComponent {
     },
     // Dodaj więcej obiektów według potrzeby
   ];
+  constructor(public dialog: MatDialog) { }
   studyId: any;
   numberOfStudies: any;
   patientId: any;
@@ -47,6 +50,17 @@ export class ResultComponent {
   }
 
   showHistogram() {
+    const dialogRef = this.dialog.open(HistogramComponent, {
+      width: '300px',
+
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      if (result) {
+        // Tutaj dodaj logikę wyświetlenia histogramu dla wybranego parametru
+        console.log('Selected variable:', result);
+      }
+    });
   }
 
 }

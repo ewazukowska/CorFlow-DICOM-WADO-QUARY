@@ -40,10 +40,13 @@
   margin: 20px auto;
   padding: 10px 20px;
   color: #fff;
-  background-color: #00008B !important;
+  background-color: #2F4F4F;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   text-decoration: none;
 
+}
+.button-submit:hover {
+  background-color: #008080;
 }
