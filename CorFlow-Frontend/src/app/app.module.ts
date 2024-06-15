@@ -21,6 +21,8 @@ import { HistogramComponent } from './histogram/histogram.component';
 import { FormsModule } from "@angular/forms";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
+import { NgChartsModule } from 'ng2-charts';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,6 +38,7 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
     CommonModule,
     NgxSliderModule,
     HttpClientModule,
+    NgChartsModule,
     BrowserAnimationsModule,
     MatDialogModule,
     MatButtonModule,

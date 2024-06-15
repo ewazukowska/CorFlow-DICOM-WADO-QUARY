@@ -5,15 +5,15 @@
       <!-- Data cards will be dynamically generated here -->
       <div class="data-card" *ngFor="let data of dataList; let i = index" [style.display]="currentIndex === i ? 'block' : 'none'">
         <tr>
-          <th>Check Patient</th>
+          <th>Check Patient:  </th>
           <td><input type="text" [(ngModel)]="patientId"></td>
         </tr>
         <tr>
-          <th>Number of studies</th>
+          <th>Number of studies:  </th>
           <td>{{ numberOfStudies }}</td>
         </tr>
         <tr>
-          <th>Study ID</th>
+          <th>Study ID:  </th>
           <td>{{ studyId }}</td>
         </tr>
         <h2>{{data.title}}</h2>

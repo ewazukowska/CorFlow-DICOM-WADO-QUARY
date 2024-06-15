@@ -14,6 +14,9 @@ import {MatDialog} from "@angular/material/dialog";
 
 export class ResultComponent {
   currentIndex: number = 0;
+  studyId: number = 35;
+  numberOfStudies: number = 287;
+  patientId: any;
 
   dataList = [
     {
@@ -36,10 +39,10 @@ export class ResultComponent {
     },
     // Dodaj więcej obiektów według potrzeby
   ];
-  constructor(public dialog: MatDialog) { }
-  studyId: any;
-  numberOfStudies: any;
-  patientId: any;
+  constructor(public dialog: MatDialog) {
+
+  }
+
 
   prevSlide() {
     this.currentIndex = (this.currentIndex > 0) ? this.currentIndex - 1 : this.dataList.length - 1;
@@ -51,7 +54,8 @@ export class ResultComponent {
 
   showHistogram() {
     const dialogRef = this.dialog.open(HistogramComponent, {
-      width: '300px',
+      width: '400px', // Adjust width here
+      height: '500px', // Adjust height here
 
     });
 

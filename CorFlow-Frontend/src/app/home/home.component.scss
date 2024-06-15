@@ -12,6 +12,7 @@
 .bold {
   font-weight: bold;
 }
+
 .container h1 {
   color: #333;
 }
@@ -26,7 +27,7 @@
   margin: 20px auto;
   padding: 10px 20px;
   color: #fff;
-  background-color: #2F4F4F;
+  background-color: #4B0082;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -34,9 +35,10 @@
 }
 
 .button:hover {
-  background-color: #008080;
+  background-color: #483D8B;
 }
+
 .button-container {
   display: flex;
-  gap: 12px; /* Adjust the space between buttons as needed */
+  gap: 6px; /* Adjust the space between buttons as needed */
 }
