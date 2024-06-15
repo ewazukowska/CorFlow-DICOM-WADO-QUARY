@@ -10,7 +10,7 @@ export class ApiService {
   constructor(private http: HttpClient) {}
 
   sendFilters(filters: any): void {
-    const endpoint = `${this.apiUrl}/api/data/`;
+    const endpoint = `${this.apiUrl}/api/[controller]`;
 
     this.http.post(endpoint, filters).subscribe(
       (response) => {

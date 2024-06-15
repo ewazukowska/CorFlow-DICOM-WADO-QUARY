@@ -1,17 +1,7 @@
-<style>
-  .form-label {
-  }
-</style>
+
 <div class="form-container">
   <div class="form-column">
     <div class="form-checkbox-group">
-      <label class="form-label">
-        Dominance
-        <select [(ngModel)]="dominance">
-          <option value="RIGHT">Right</option>
-          <option value="LEFT">Left</option>
-        </select>
-      </label>
     </div>
     <div class="form-checkbox-group">
       <label class="form-label">
@@ -25,6 +15,13 @@
   </div>
 
   <div class="form-column">
+    <label class="form-checkbox-group">
+      Dominance
+      <select [(ngModel)]="dominance">
+        <option value="RIGHT">Right</option>
+        <option value="LEFT">Left</option>
+      </select>
+    </label>
       <div class="form-checkbox-group">
         <label class="form-checkbox">
           <input type="checkbox" name="filterOcclusion" value="totalOcclusion">
@@ -87,29 +84,20 @@
       </div>
   </div>
 
+
   <div class="form-column">
+    <div class="form-checkbox-group">
+      <label class="form-label">
+        Syntax Score
+        <div class="custom-slider">
+          <ngx-slider [(value)]="syntaxScore" [(highValue)]="syntaxScoreRange.max" [options]="syntaxScoreOptions"></ngx-slider>
+        </div>
+      </label>
+    </div>
     <div class="form-checkbox-group">
       <label class="form-label">
         Age
         <ngx-slider [(value)]="age" [(highValue)]="ageRange.max" [options]="ageOptions"></ngx-slider>
-      </label>
-    </div>
-    <div class="form-checkbox-group">
-      <label class="form-label">
-        Frame
-        <ngx-slider [(value)]="frame" [(highValue)]="frameRange.max" [options]="frameOptions"></ngx-slider>
-      </label>
-    </div>
-    <div class="form-checkbox-group">
-      <label class="form-label">
-        X Coordinate
-        <ngx-slider [(value)]="x" [(highValue)]="xRange.max" [options]="xOptions"></ngx-slider>
-      </label>
-    </div>
-    <div class="form-checkbox-group">
-      <label class="form-label">
-        Y Coordinate
-        <ngx-slider [(value)]="y" [(highValue)]="yRange.max" [options]="yOptions"></ngx-slider>
       </label>
     </div>
     <div class="form-checkbox-group">
@@ -134,14 +122,6 @@
       <label class="form-label">
         Occlusion Length
         <ngx-slider [(value)]="occlusionLength" [(highValue)]="occlusionLengthRange.max" [options]="occlusionLengthOptions"></ngx-slider>
-      </label>
-    </div>
-    <div class="form-checkbox-group">
-      <label class="form-label">
-        Syntax Score
-        <div class="custom-slider">
-        <ngx-slider [(value)]="syntaxScore" [(highValue)]="syntaxScoreRange.max" [options]="syntaxScoreOptions"></ngx-slider>
-        </div>
       </label>
     </div>
   </div>

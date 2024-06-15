@@ -22,7 +22,9 @@ import {HttpClientModule} from "@angular/common/http";
 
 export class FilterFormComponent implements OnInit {
 
-  constructor(public router: Router, public apiService: ApiService) { }
+  constructor(public router: Router)
+  //constructor(public router: Router, public apiService: ApiService)
+  { }
 
   frame: number = 32;
   age: number = 30;
@@ -103,6 +105,7 @@ export class FilterFormComponent implements OnInit {
   //   });
   // }
 
+
   filterQuery() {
     const filters = {
       frame: this.frame,
@@ -116,7 +119,7 @@ export class FilterFormComponent implements OnInit {
       occlusionLength: this.occlusionLength,
     };
     console.log('Wciśnięto klawisz submit');
-    this.apiService.sendFilters(filters);
+    //this.apiService.sendFilters(filters);
     console.log('Wysłano filtry');
   }
 

@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import {CommonModule, NgOptimizedImage} from "@angular/common";
+import {FormsModule} from "@angular/forms";
 
 @Component({
   selector: 'app-result',
   standalone: true,
-  imports: [CommonModule, NgOptimizedImage],
+  imports: [CommonModule, NgOptimizedImage, FormsModule],
   templateUrl: './result.component.html',
   styleUrl: './result.component.css'
 })
@@ -33,6 +34,9 @@ export class ResultComponent {
     },
     // Dodaj więcej obiektów według potrzeby
   ];
+  studyId: any;
+  numberOfStudies: any;
+  patientId: any;
 
   prevSlide() {
     this.currentIndex = (this.currentIndex > 0) ? this.currentIndex - 1 : this.dataList.length - 1;
@@ -41,4 +45,8 @@ export class ResultComponent {
   nextSlide() {
     this.currentIndex = (this.currentIndex < this.dataList.length - 1) ? this.currentIndex + 1 : 0;
   }
+
+  showHistogram() {
+  }
+
 }
