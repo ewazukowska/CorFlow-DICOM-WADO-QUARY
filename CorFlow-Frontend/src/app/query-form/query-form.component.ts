@@ -1,7 +1,7 @@
-// filter-form.component.ts
-
-import {Component, HostListener} from '@angular/core';
-import {Router, RouterOutlet} from "@angular/router";
+import { Component, HostListener } from '@angular/core';
+import { Router, RouterOutlet } from "@angular/router";
+import { ApiService } from '../services/api.service';
+import { Filters } from '../models/filters.model';
 
 @Component({
   selector: 'app-query-form',
@@ -12,21 +12,40 @@ import {Router, RouterOutlet} from "@angular/router";
   ],
   styleUrls: ['./query-form.component.scss']
 })
-
-
 export class QueryFormComponent {
-  constructor(public router: Router) { }
+  public filters: Filters = {
+    frames: 0,
+    x: 0,
+    y: 0,
+    width: 0,
+    height: 0,
+    dominance: '',
+    sex: '',
+    occlusionAge: 0,
+    occlusionLength: 0
+  };
 
+  constructor(private router: Router, private apiService: ApiService) { }
 
   @HostListener('document:keydown.enter', ['$event'])
-  handleEnterKey(event: KeyboardEvent) {
-    console.log('Wciśnięto klawisz Enter');
+  handleEnterKey(event: KeyboardEvent): void {
+    console.log('Enter key pressed');
     this.submitQuery();
   }
 
-  query: string = '';
+  public submitQuery(): void {
+    this.apiService.postJson(this.filters).subscribe({
+      next: (results) => {
+        console.log('Search results:', results);
+        this.navigateToResults();
+      },
+      error: (error) => {
+        console.error('Search failed:', error);
+      }
+    });
+  }
 
-  submitQuery() {
+  private navigateToResults(): void {
     this.router.navigate(['results']).then((success) => {
       if (success) {
         console.log('Navigated to results successfully!');
@@ -35,15 +54,4 @@ export class QueryFormComponent {
       }
     });
   }
-
-  filterQuery() {
-    this.router.navigate(['results']).then((success) => {
-      if (success) {
-        console.log('Navigated to results successfully!');
-      } else {
-        console.log('Navigation failed!');
-      }
-    });
-  }
-
 }
