@@ -6,11 +6,11 @@ import { Observable, map } from 'rxjs';
   providedIn: 'root'
 })
 export class ApiService {
-  private apiUrl = 'http://127.0.0.1:4200';
+  private apiUrl = 'http://127.0.0.1:44317';
   constructor(private http: HttpClient) {}
 
   sendFilters(filters: any): void {
-    const endpoint = `${this.apiUrl}/api/[controller]`;
+    const endpoint = `${this.apiUrl}/api/Lesions`;
 
     this.http.post(endpoint, filters).subscribe(
       (response) => {
