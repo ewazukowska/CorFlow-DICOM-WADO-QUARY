@@ -1,0 +1,19 @@
+<h2 mat-dialog-title>Select a variable</h2>
+<mat-dialog-content>
+  <div class="form-container">
+    <mat-form-field appearance="fill">
+      <mat-select [(ngModel)]="selectedVariable">
+        <mat-option *ngFor="let variable of variables" [value]="variable">
+          {{ variable }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+    <div class="button-container">
+      <button mat-button class="confirm-button" (click)="onConfirm()">Confirm</button>
+    </div>
+  </div>
+  <canvas id="histogramCanvas"></canvas>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button class="cancel-button" (click)="onCancel()">Cancel</button>
+</mat-dialog-actions>

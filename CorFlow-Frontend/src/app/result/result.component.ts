@@ -1,16 +1,22 @@
 import { Component } from '@angular/core';
 import {CommonModule, NgOptimizedImage} from "@angular/common";
+import {FormsModule} from "@angular/forms";
+import {HistogramComponent} from "../histogram/histogram.component";
+import {MatDialog} from "@angular/material/dialog";
 
 @Component({
   selector: 'app-result',
   standalone: true,
-  imports: [CommonModule, NgOptimizedImage],
+  imports: [CommonModule, NgOptimizedImage, FormsModule],
   templateUrl: './result.component.html',
-  styleUrl: './result.component.css'
+  styleUrl: './result.component.scss'
 })
 
 export class ResultComponent {
   currentIndex: number = 0;
+  studyId: number = 35;
+  numberOfStudies: number = 287;
+  patientId: any;
 
   dataList = [
     {
@@ -33,6 +39,10 @@ export class ResultComponent {
     },
     // Dodaj więcej obiektów według potrzeby
   ];
+  constructor(public dialog: MatDialog) {
+
+  }
+
 
   prevSlide() {
     this.currentIndex = (this.currentIndex > 0) ? this.currentIndex - 1 : this.dataList.length - 1;
@@ -41,4 +51,20 @@ export class ResultComponent {
   nextSlide() {
     this.currentIndex = (this.currentIndex < this.dataList.length - 1) ? this.currentIndex + 1 : 0;
   }
+
+  showHistogram() {
+    const dialogRef = this.dialog.open(HistogramComponent, {
+      width: '400px', // Adjust width here
+      height: '500px', // Adjust height here
+
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      if (result) {
+        // Tutaj dodaj logikę wyświetlenia histogramu dla wybranego parametru
+        console.log('Selected variable:', result);
+      }
+    });
+  }
+
 }

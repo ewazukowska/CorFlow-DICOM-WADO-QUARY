@@ -22,7 +22,7 @@ export class ApiService {
     });
 
     return this.http.post(
-      `${this.apiUrl}/${this.dicomControllerName}/${this.endpoint}`, filters, 
+      `${this.apiUrl}/${this.dicomControllerName}/${this.endpoint}`, filters,
       { headers, responseType: 'blob' as 'json'})
       .pipe(
         catchError(this.handleError)

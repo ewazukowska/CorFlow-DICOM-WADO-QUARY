@@ -1,10 +1,13 @@
 <div class="container">
-  <h1>CorFlow DICOM WADO QUARY</h1>
+  <h1 class="bold"> CorFlow WADO-RS QUERY</h1>
   <p>Project designed to simplify access, processing, and management of medical images in DICOM format.</p>
   <!-- The routed views render in the <router-outlet>-->
 
-  <button class="button" (click)="navigateToQueryForm()">Enter query</button>
-  <button class="button" (click)="navigateToFilterForm()">Chose between filters</button>
+  <div class="button-container">
+    <button class="button" (click)="navigateToQueryForm()">Enter query</button>
+    <button class="button" (click)="navigateToFilterForm()">Chose between filters</button>
+  </div>
   <router-outlet></router-outlet>
 </div>
+
 

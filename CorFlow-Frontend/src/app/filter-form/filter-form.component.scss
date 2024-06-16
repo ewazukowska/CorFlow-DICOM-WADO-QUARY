@@ -24,25 +24,17 @@
   width: calc(100% - 22px);
   margin-top: 10px;
 }
+.dominance-group {
+  margin-bottom: 200px; /* Adjust this value as needed */
+}
 
 .form-checkbox-group {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   font-size: 16px;
 }
 
 .form-checkbox {
   margin-bottom: 10px;
-}
-
-.custom-slider {
-  .ngx-slider {
-    .ngx-slider-selection {
-      background: rgb(0, 255, 0) !important;
-    }
-    .ngx-slider-bubble {
-      font-size: 5px;
-    }
-  }
 }
 
 .button-submit {
@@ -51,9 +43,86 @@
   margin: 20px auto;
   padding: 10px 20px;
   color: #fff;
-  background-color: #00008B !important;
+  background-color: #4B0082;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   text-decoration: none;
 }
+.button-submit:hover {
+  background-color: #483D8B;
+}
+.form-column {
+  margin-top: 20px;
+  display: inline-block;
+  vertical-align: top;
+  width: calc(40.33% - 1px); /* 33.33% szerokości kontenera - 1px na linii */
+  margin-right: -1px; /* Wyzerowanie marginesu z prawej strony dla poprawienia układu */
+  position: relative; /* Ustalenie pozycji względnej dla separatora */
+}
+
+.column-header {
+  margin-top: 0; /* Usunięcie domyślnego marginesu górnego dla nagłówków */
+  font-size: 1.2em; /* Zwiększenie rozmiaru czcionki */
+  font-weight: bold; /* Pogrubienie tekstu */
+  text-align: left; /* Wyrównanie do lewej */
+}
+.column-header.lesion-title {
+  margin-left: 30px; /* Przesunięcie w prawo */
+}
+
+.separator-line {
+  position: absolute;
+  top: 250px;
+  bottom: 0;
+  left: 40.33%; /* Początek linii po prawej stronie pierwszej kolumny */
+  width: 1px; /* Szerokość linii */
+  background-color: #ccc; /* Kolor linii */
+}
+
+// We need to use ::ng-deep to overcome view encapsulation
+::ng-deep {
+  .custom-slider .ngx-slider .ngx-slider-bar {
+    background: #E6E6FA;
+    height: 5px;
+  }
+
+  .custom-slider .ngx-slider .ngx-slider-selection {
+    background: #C8AFC8;
+  }
+
+  .custom-slider .ngx-slider .ngx-slider-pointer {
+    width: 10px;
+    height: 15px;
+    top: auto; /* to remove the default positioning */
+    bottom: 0;
+    background-color: #483D8B;
+  }
+
+  .custom-slider .ngx-slider .ngx-slider-pointer:after {
+    display: none;
+  }
+
+  .custom-slider .ngx-slider .ngx-slider-bubble {
+    bottom: 14px;
+  }
+
+  .custom-slider .ngx-slider .ngx-slider-limit {
+    font-weight: bold;
+    color: red;
+  }
+
+  .custom-slider .ngx-slider .ngx-slider-tick {
+    width: 1px;
+    height: 15px;
+    margin-left: 4px;
+    border-radius: 0;
+    background: black;
+    top: -1px;
+  }
+
+  .custom-slider .ngx-slider .ngx-slider-tick.ngx-slider-selected {
+    background: rgb(0, 110, 255);
+  }
+}
+
