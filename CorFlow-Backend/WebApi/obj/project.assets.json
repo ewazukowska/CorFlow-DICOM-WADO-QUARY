@@ -4487,7 +4487,7 @@
       ]
     },
     "Microsoft.CSharp/4.5.0": {
-      "sha512": "EGoBmf3Na2ppbhPePDE9PlX81r1HuOZH5twBrq7couJZiPTjUnD3648balerQJO6EJ8Sj+43+XuRwQ7r+3tE3w==",
+      "sha512": "kaj6Wb4qoMuH3HySFJhxwQfe8R/sJsNJnANrvv8WdFPMoNbKY5htfNscv+LHCu5ipz+49m2e+WQXpLXr9XYemQ==",
       "type": "package",
       "path": "microsoft.csharp/4.5.0",
       "files": [
@@ -8104,7 +8104,7 @@
       ]
     },
     "System.Net.Http/4.3.0": {
-      "sha512": "Z1UfSF6dlpCdZdxh6LeoGlYH+q6ptG/iiIWgUUeKhE3DbQACmZkU7Sz2nOX0qdHjz72MOdYRbkSJ5Qwl6sZgvg==",
+      "sha512": "sYg+FtILtRQuYWSIAuNOELwVuVsxVyJGWQyOnlAzhV4xvhyFnON1bAzYYC+jjRW8JREM45R0R5Dgi8MTC5sEwA==",
       "type": "package",
       "path": "system.net.http/4.3.0",
       "files": [
@@ -8186,11 +8186,12 @@
       ]
     },
     "System.Net.NameResolution/4.3.0": {
-      "sha512": "DPvMSdd32CbEOCTtOpO4nY9UvbP6LJe375F1yEQjy667WT5LEh1Ek2T4DSVw1STR0K3LSawWfBFwoeSG0TXFeA==",
+      "sha512": "AFYl08R7MrsrEjqpQWTZWBadqXyTzNDaWpMqyxhb0d6sGhV6xMDKueuBXlLL30gz+DIRY6MpdgnHWlCh5wmq9w==",
       "type": "package",
       "path": "system.net.nameresolution/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -8458,7 +8459,7 @@
       ]
     },
     "System.Numerics.Vectors/4.5.0": {
-      "sha512": "MNcaYxUJvUcoXOa+jgKl/GDw/Mh+wMrxDjW4dre7qrp35LUGTjUBNtZsNjxsWX592ocdyqt1X5hMJB+5OStoYw==",
+      "sha512": "QQTlPTl06J/iiDbJCiepZ4H//BVraReU4O4EoRw1U02H5TLUIT7xn3GnDp9AXPSlJUDyFs4uWjWafNX6WrAojQ==",
       "type": "package",
       "path": "system.numerics.vectors/4.5.0",
       "files": [
@@ -9676,7 +9677,7 @@
       ]
     },
     "System.Security.Cryptography.Cng/4.5.0": {
-      "sha512": "O4tqXxWCD8y1IU1VTgzbuBFwoRahrADhDUxHjwezhHCsqyFNyQ5EytjWBxu0EsZuH14b4UO2pFkG063K2h/9Ug==",
+      "sha512": "WG3r7EyjUe9CMPFSs6bty5doUqT+q9pbI80hlNzo2SkPkZ4VTuZkGWjpp77JB8+uaL4DFPRdBsAY+DX3dBK92A==",
       "type": "package",
       "path": "system.security.cryptography.cng/4.5.0",
       "files": [
@@ -10654,7 +10655,7 @@
       ]
     },
     "System.Threading.Tasks.Parallel/4.3.0": {
-      "sha512": "Wn3GV5YIWjxvv9muD9FSZxH4PLx98Y4D1Z5mpYTowK1RLPtFvusnVKnT0OzmzEpYCMtVNgqfk3kPc9xRGsWrLA==",
+      "sha512": "cbjBNZHf/vQCfcdhzx7knsiygoCKgxL8mZOeocXZn5gWhCdzHIq6bYNKWX0LAJCWYP7bds4yBK8p06YkP0oa0g==",
       "type": "package",
       "path": "system.threading.tasks.parallel/4.3.0",
       "files": [
@@ -11022,26 +11023,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Adam\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\PanSt\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Adam\\Source\\Repos\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\WebApi\\WebApi.csproj",
+      "projectUniqueName": "C:\\Users\\PanSt\\Source\\Repos\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\WebApi\\WebApi.csproj",
       "projectName": "WebApi",
-      "projectPath": "C:\\Users\\Adam\\Source\\Repos\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\WebApi\\WebApi.csproj",
-      "packagesPath": "C:\\Users\\Adam\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Adam\\Source\\Repos\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\WebApi\\obj\\",
+      "projectPath": "C:\\Users\\PanSt\\Source\\Repos\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\WebApi\\WebApi.csproj",
+      "packagesPath": "C:\\Users\\PanSt\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\PanSt\\Source\\Repos\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\WebApi\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Adam\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\PanSt\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -11049,22 +11043,20 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://nexus.czk.comarch/repository/mdm-nuget/": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\Adam\\Source\\Repos\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\Application\\Application.csproj": {
-              "projectPath": "C:\\Users\\Adam\\Source\\Repos\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\Application\\Application.csproj"
+            "C:\\Users\\PanSt\\Source\\Repos\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\Application\\Application.csproj": {
+              "projectPath": "C:\\Users\\PanSt\\Source\\Repos\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\Application\\Application.csproj"
             },
-            "C:\\Users\\Adam\\Source\\Repos\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\Infrastructure\\Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\Adam\\Source\\Repos\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\Infrastructure\\Infrastructure.csproj"
+            "C:\\Users\\PanSt\\Source\\Repos\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\Infrastructure\\Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\PanSt\\Source\\Repos\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\Infrastructure\\Infrastructure.csproj"
             },
-            "C:\\Users\\Adam\\Source\\Repos\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\Presentation\\Presentation.csproj": {
-              "projectPath": "C:\\Users\\Adam\\Source\\Repos\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\Presentation\\Presentation.csproj"
+            "C:\\Users\\PanSt\\Source\\Repos\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\Presentation\\Presentation.csproj": {
+              "projectPath": "C:\\Users\\PanSt\\Source\\Repos\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\Presentation\\Presentation.csproj"
             }
           }
         }
@@ -11073,6 +11065,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
