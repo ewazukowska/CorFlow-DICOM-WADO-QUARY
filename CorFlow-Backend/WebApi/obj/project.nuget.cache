@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WnbiscYcodaicvcbIEZAl7328CBdx1ZQ2AG/niozQyjgEJrqADG1sgRDWw9spdsBCGEBqhEMiVQ35Ob7l5Ijuw==",
+  "dgSpecHash": "aEjF4wMlIYABPkaHAdl57KPPBA97rxUXUKKckImDLf0U/wdHWVgBbnKRMsbVbt+WlOPrGhCPx8SCcKk46k/D/Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\PanSt\\Source\\Repos\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\WebApi\\WebApi.csproj",
+  "projectFilePath": "C:\\Users\\PanSt\\source\\repos\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\WebApi\\WebApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\PanSt\\.nuget\\packages\\aspnetcore.healthchecks.sqlserver\\8.0.2\\aspnetcore.healthchecks.sqlserver.8.0.2.nupkg.sha512",
     "C:\\Users\\PanSt\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
