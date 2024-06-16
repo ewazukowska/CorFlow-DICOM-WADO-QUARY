@@ -38,8 +38,7 @@
               "RelativeToolTip": "Application\\Interfaces\\ILesionService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAA6AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-16T08:15:25.762Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-16T08:15:25.762Z"
             },
             {
               "$type": "Document",
@@ -49,7 +48,7 @@
               "RelativeDocumentMoniker": "WebApi\\Controllers\\LesionsController.cs",
               "ToolTip": "C:\\Users\\PanSt\\source\\repos\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\WebApi\\Controllers\\LesionsController.cs",
               "RelativeToolTip": "WebApi\\Controllers\\LesionsController.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAAACQAAABDAAAA",
+              "ViewState": "AQIAABYAAAAAAAAAAAAAACQAAABDAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-16T07:38:45.078Z",
               "EditorCaption": ""
@@ -64,8 +63,7 @@
               "RelativeToolTip": "Application\\LesionService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-16T07:36:50.847Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-16T07:36:50.847Z"
             }
           ]
         }

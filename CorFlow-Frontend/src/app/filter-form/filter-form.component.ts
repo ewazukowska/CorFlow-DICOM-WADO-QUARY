@@ -40,6 +40,8 @@ export class FilterFormComponent implements OnInit {
     syntaxScore: 25
   }
 
+  responseBlob: Blob | null = null;
+
   // Ranges
   ageRange = { min: 0, max: 100 };
   frameRange = { min: 0, max: 100 };
@@ -80,8 +82,9 @@ export class FilterFormComponent implements OnInit {
   filterQuery() {
     console.log('Submit pressed');
     this.apiService.postJson(this.filters).subscribe({
-      next: (results) => {
+      next: (results: Blob) => {
         console.log("Search results:", results);
+        this.responseBlob = results;
       },
       error: (error) => {
         console.error("Search failed:", error);
