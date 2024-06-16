@@ -1,30 +1,42 @@
-<style>
-  .form-label {
-  }
-</style>
+
 <div class="form-container">
   <div class="form-column">
+    <h3 class="column-header">Patient: </h3>
     <div class="form-checkbox-group">
-      <label class="form-label">
-        Dominance
-        <select [(ngModel)]="dominance">
-          <option value="RIGHT">Right</option>
-          <option value="LEFT">Left</option>
-        </select>
-      </label>
     </div>
     <div class="form-checkbox-group">
       <label class="form-label">
         Sex
-        <select [(ngModel)]="sex">
+        <select [(ngModel)]="filters.sex">
           <option value="F">Female</option>
           <option value="M">Male</option>
         </select>
       </label>
     </div>
+    <div class="form-checkbox-group">
+      <label class="form-label">
+        Age
+        <div class="custom-slider">
+        <ngx-slider [(value)]="filters.age" [(highValue)]="ageRange.max" [options]="ageOptions"></ngx-slider>
+        </div>
+      </label>
+    </div>
   </div>
 
+
   <div class="form-column">
+    <h3 class="column-header" style="margin-left: 30px;">Lesion:</h3>
+    <div class="form-checkbox-group">
+    </div>
+    <div class="form-checkbox-group dominance-group">
+      <label class="form-checkbox">
+        Dominance
+        <select [(ngModel)]="filters.dominance">
+          <option value="RIGHT">Right</option>
+          <option value="LEFT">Left</option>
+        </select>
+      </label>
+    </div>
       <div class="form-checkbox-group">
         <label class="form-checkbox">
           <input type="checkbox" name="filterOcclusion" value="totalOcclusion">
@@ -87,60 +99,49 @@
       </div>
   </div>
 
+
   <div class="form-column">
     <div class="form-checkbox-group">
-      <label class="form-label">
-        Age
-        <ngx-slider [(value)]="age" [(highValue)]="ageRange.max" [options]="ageOptions"></ngx-slider>
-      </label>
     </div>
     <div class="form-checkbox-group">
-      <label class="form-label">
-        Frame
-        <ngx-slider [(value)]="frame" [(highValue)]="frameRange.max" [options]="frameOptions"></ngx-slider>
-      </label>
-    </div>
-    <div class="form-checkbox-group">
-      <label class="form-label">
-        X Coordinate
-        <ngx-slider [(value)]="x" [(highValue)]="xRange.max" [options]="xOptions"></ngx-slider>
-      </label>
-    </div>
-    <div class="form-checkbox-group">
-      <label class="form-label">
-        Y Coordinate
-        <ngx-slider [(value)]="y" [(highValue)]="yRange.max" [options]="yOptions"></ngx-slider>
-      </label>
-    </div>
-    <div class="form-checkbox-group">
-      <label class="form-label">
-        Width
-        <ngx-slider [(value)]="width" [(highValue)]="widthRange.max" [options]="widthOptions"></ngx-slider>
-      </label>
-    </div>
-    <div class="form-checkbox-group">
-      <label class="form-label">
-        Height
-        <ngx-slider [(value)]="height" [(highValue)]="heightRange.max" [options]="heightOptions"></ngx-slider>
-      </label>
-    </div>
-    <div class="form-checkbox-group">
-      <label class="form-label">
-        Occlusion Age
-        <ngx-slider [(value)]="occlusionAge" [(highValue)]="occlusionAgeRange.max" [options]="occlusionAgeOptions"></ngx-slider>
-      </label>
-    </div>
-    <div class="form-checkbox-group">
-      <label class="form-label">
-        Occlusion Length
-        <ngx-slider [(value)]="occlusionLength" [(highValue)]="occlusionLengthRange.max" [options]="occlusionLengthOptions"></ngx-slider>
-      </label>
     </div>
     <div class="form-checkbox-group">
       <label class="form-label">
         Syntax Score
         <div class="custom-slider">
-        <ngx-slider [(value)]="syntaxScore" [(highValue)]="syntaxScoreRange.max" [options]="syntaxScoreOptions"></ngx-slider>
+          <ngx-slider [(value)]="filters.syntaxScore" [(highValue)]="syntaxScoreRange.max" [options]="syntaxScoreOptions"></ngx-slider>
+        </div>
+      </label>
+    </div>
+    <div class="form-checkbox-group">
+      <label class="form-label">
+        Width
+        <div class="custom-slider">
+        <ngx-slider [(value)]="filters.width" [(highValue)]="widthRange.max" [options]="widthOptions"></ngx-slider>
+        </div>
+      </label>
+    </div>
+    <div class="form-checkbox-group">
+      <label class="form-label">
+        Height
+        <div class="custom-slider">
+        <ngx-slider [(value)]="filters.height" [(highValue)]="heightRange.max" [options]="heightOptions"></ngx-slider>
+        </div>
+      </label>
+    </div>
+    <div class="form-checkbox-group">
+      <label class="form-label">
+        Occlusion Age
+        <div class="custom-slider">
+        <ngx-slider [(value)]="filters.occlusionAge" [(highValue)]="occlusionAgeRange.max" [options]="occlusionAgeOptions"></ngx-slider>
+        </div>
+      </label>
+    </div>
+    <div class="form-checkbox-group">
+      <label class="form-label">
+        Occlusion Length
+        <div class="custom-slider">
+        <ngx-slider [(value)]="filters.occlusionLength" [(highValue)]="occlusionLengthRange.max" [options]="occlusionLengthOptions"></ngx-slider>
         </div>
       </label>
     </div>

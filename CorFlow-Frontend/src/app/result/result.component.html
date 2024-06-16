@@ -1,10 +1,21 @@
 <div class="container">
-  <h1>Data Viewer</h1>
   <div class="data-container">
     <button class="prev" (click)="prevSlide()">❮ Prev</button>
     <div class="data-slider">
       <!-- Data cards will be dynamically generated here -->
       <div class="data-card" *ngFor="let data of dataList; let i = index" [style.display]="currentIndex === i ? 'block' : 'none'">
+        <tr>
+          <th>Check Patient:  </th>
+          <td><input type="text" [(ngModel)]="patientId"></td>
+        </tr>
+        <tr>
+          <th>Number of studies:  </th>
+          <td>{{ numberOfStudies }}</td>
+        </tr>
+        <tr>
+          <th>Study ID:  </th>
+          <td>{{ studyId }}</td>
+        </tr>
         <h2>{{data.title}}</h2>
         <table>
           <tr>
@@ -15,7 +26,11 @@
             <th>{{info.key}}</th>
             <td>{{info.value}}</td>
           </tr>
+          <!-- Dodaj nowe pola tutaj -->
         </table>
+        <button (click)="showHistogram()">See Histogram</button>
+        <!-- Histogram wyświetlający rozrzut na parametrach które nie zostały wybrane -->
+        <!-- Tutaj możesz dodać element histogramu -->
       </div>
     </div>
     <button class="next" (click)="nextSlide()">Next ❯</button>
