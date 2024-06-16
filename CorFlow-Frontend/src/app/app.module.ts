@@ -8,7 +8,6 @@ import { QueryFormComponent } from './query-form/query-form.component';
 import { ResultComponent } from "./result/result.component";
 import { CommonModule } from "@angular/common";
 import { HttpClientModule } from '@angular/common/http';
-import { ApiService } from "./services/api.service";
 import { NgxSliderModule } from '@angular-slider/ngx-slider';
 import { FilterFormComponent } from './filter-form/filter-form.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -46,9 +45,6 @@ import { NgChartsModule } from 'ng2-charts';
     MatInputModule,
     MatSelectModule,
     FormsModule
-  ],
-  providers: [
-    ApiService
   ],
   bootstrap: [AppComponent]
 })

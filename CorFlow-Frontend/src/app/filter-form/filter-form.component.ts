@@ -26,7 +26,7 @@ export class FilterFormComponent implements OnInit {
 
   constructor(public router: Router, public apiService: ApiService) { }
 
-  filters: Filters = {
+  filters: any = {
     frames: 32,
     age: 30,
     x: 7,

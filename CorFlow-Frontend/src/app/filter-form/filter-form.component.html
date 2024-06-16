@@ -7,7 +7,7 @@
     <div class="form-checkbox-group">
       <label class="form-label">
         Sex
-        <select [(ngModel)]="sex">
+        <select [(ngModel)]="filters.sex">
           <option value="F">Female</option>
           <option value="M">Male</option>
         </select>
@@ -17,7 +17,7 @@
       <label class="form-label">
         Age
         <div class="custom-slider">
-        <ngx-slider [(value)]="age" [(highValue)]="ageRange.max" [options]="ageOptions"></ngx-slider>
+        <ngx-slider [(value)]="filters.age" [(highValue)]="ageRange.max" [options]="ageOptions"></ngx-slider>
         </div>
       </label>
     </div>
@@ -32,7 +32,7 @@
     <div class="form-checkbox-group dominance-group">
       <label class="form-checkbox">
         Dominance
-        <select [(ngModel)]="dominance">
+        <select [(ngModel)]="filters.dominance">
           <option value="RIGHT">Right</option>
           <option value="LEFT">Left</option>
         </select>
@@ -110,7 +110,7 @@
       <label class="form-label">
         Syntax Score
         <div class="custom-slider">
-          <ngx-slider [(value)]="syntaxScore" [(highValue)]="syntaxScoreRange.max" [options]="syntaxScoreOptions"></ngx-slider>
+          <ngx-slider [(value)]="filters.syntaxScore" [(highValue)]="syntaxScoreRange.max" [options]="syntaxScoreOptions"></ngx-slider>
         </div>
       </label>
     </div>
@@ -118,7 +118,7 @@
       <label class="form-label">
         Width
         <div class="custom-slider">
-        <ngx-slider [(value)]="width" [(highValue)]="widthRange.max" [options]="widthOptions"></ngx-slider>
+        <ngx-slider [(value)]="filters.width" [(highValue)]="widthRange.max" [options]="widthOptions"></ngx-slider>
         </div>
       </label>
     </div>
@@ -126,7 +126,7 @@
       <label class="form-label">
         Height
         <div class="custom-slider">
-        <ngx-slider [(value)]="height" [(highValue)]="heightRange.max" [options]="heightOptions"></ngx-slider>
+        <ngx-slider [(value)]="filters.height" [(highValue)]="heightRange.max" [options]="heightOptions"></ngx-slider>
         </div>
       </label>
     </div>
@@ -134,7 +134,7 @@
       <label class="form-label">
         Occlusion Age
         <div class="custom-slider">
-        <ngx-slider [(value)]="occlusionAge" [(highValue)]="occlusionAgeRange.max" [options]="occlusionAgeOptions"></ngx-slider>
+        <ngx-slider [(value)]="filters.occlusionAge" [(highValue)]="occlusionAgeRange.max" [options]="occlusionAgeOptions"></ngx-slider>
         </div>
       </label>
     </div>
@@ -142,7 +142,7 @@
       <label class="form-label">
         Occlusion Length
         <div class="custom-slider">
-        <ngx-slider [(value)]="occlusionLength" [(highValue)]="occlusionLengthRange.max" [options]="occlusionLengthOptions"></ngx-slider>
+        <ngx-slider [(value)]="filters.occlusionLength" [(highValue)]="occlusionLengthRange.max" [options]="occlusionLengthOptions"></ngx-slider>
         </div>
       </label>
     </div>
