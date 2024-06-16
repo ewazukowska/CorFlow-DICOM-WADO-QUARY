@@ -9,8 +9,8 @@ import { Filters } from '../models/filters.model';
 })
 
 export class ApiService {
-  private apiUrl = "http://localhost:5021";
-  private dicomControllerName = "ApiController";
+  private apiUrl = "http://localhost:44317";
+  private dicomControllerName = "Lesions";
   constructor(private http: HttpClient) {};
 
   postJson(filters: Filters | null): Observable<any> {

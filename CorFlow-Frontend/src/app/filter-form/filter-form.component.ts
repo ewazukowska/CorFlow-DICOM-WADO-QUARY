@@ -3,7 +3,7 @@
 import {Component, HostListener, OnInit} from '@angular/core';
 import {Router, RouterOutlet} from "@angular/router";
 import {FormsModule} from "@angular/forms";
-import { ApiService } from "./api.service";
+import { ApiService } from '../services/api.service';
 import {NgxSliderModule, Options} from "@angular-slider/ngx-slider";
 import {HttpClientModule} from "@angular/common/http";
 
@@ -104,7 +104,7 @@ export class FilterFormComponent implements OnInit {
       occlusionLength: this.occlusionLength,
     };
     console.log('Wciśnięto klawisz submit');
-    this.apiService.sendFilters(filters);
+    this.apiService.postJson(filters);
     console.log('Wysłano filtry');
   }
 
