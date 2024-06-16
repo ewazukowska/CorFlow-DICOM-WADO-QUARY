@@ -4,7 +4,7 @@ namespace Infrastructure.Repositories
 {
     public class Lesion : ILesionService
     {
-        public Task<List<Domain.Entities.Lesion>> GetLesionsAsync(Guid id)
+        public Task<IEnumerable<Domain.Entities.Lesion>> GetAsync(Domain.Entities.Lesion entity, CancellationToken cancellationToken)
         {
             throw new NotImplementedException();
         }
