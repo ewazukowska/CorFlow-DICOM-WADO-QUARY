@@ -11,7 +11,7 @@ import { Filters } from '../models/filters.model';
 export class ApiService {
   private apiUrl = "http://localhost:8080";
   private dicomControllerName = "ApiController";
-  private endpoint = "/api/Lesions";
+  private endpoint = "api/Lesions";
 
   constructor(private http: HttpClient) {};
 
