@@ -7,12 +7,12 @@
       "RelativeMoniker": "D:0:0:{7C36D042-D954-416A-A429-DB020BAEBC51}|WebApi\\WebApi.csproj|solutionrelative:webapi\\controllers\\lesionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4605F506-10B5-4741-8011-76E267E0CC0B}|Application\\Application.csproj|c:\\users\\panst\\source\\repos\\corflow-dicom-wado-quary\\corflow-backend\\application\\interfaces\\ilesionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4605F506-10B5-4741-8011-76E267E0CC0B}|Application\\Application.csproj|solutionrelative:application\\interfaces\\ilesionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4605F506-10B5-4741-8011-76E267E0CC0B}|Application\\Application.csproj|c:\\users\\panst\\source\\repos\\corflow-dicom-wado-quary\\corflow-backend\\application\\lesionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4605F506-10B5-4741-8011-76E267E0CC0B}|Application\\Application.csproj|solutionrelative:application\\lesionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4605F506-10B5-4741-8011-76E267E0CC0B}|Application\\Application.csproj|c:\\users\\panst\\source\\repos\\corflow-dicom-wado-quary\\corflow-backend\\application\\interfaces\\ilesionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4605F506-10B5-4741-8011-76E267E0CC0B}|Application\\Application.csproj|solutionrelative:application\\interfaces\\ilesionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -25,8 +25,12 @@
           "SelectedChildIndex": 2,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "ILesionService.cs",
               "DocumentMoniker": "C:\\Users\\PanSt\\source\\repos\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\Application\\Interfaces\\ILesionService.cs",
               "RelativeDocumentMoniker": "Application\\Interfaces\\ILesionService.cs",
@@ -38,10 +42,6 @@
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
-            },
-            {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "LesionsController.cs",
@@ -49,20 +49,20 @@
               "RelativeDocumentMoniker": "WebApi\\Controllers\\LesionsController.cs",
               "ToolTip": "C:\\Users\\PanSt\\source\\repos\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\WebApi\\Controllers\\LesionsController.cs",
               "RelativeToolTip": "WebApi\\Controllers\\LesionsController.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAACwAAAAhAAAA",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAAACQAAABDAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-16T07:38:45.078Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "LesionService.cs",
               "DocumentMoniker": "C:\\Users\\PanSt\\source\\repos\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\Application\\LesionService.cs",
               "RelativeDocumentMoniker": "Application\\LesionService.cs",
               "ToolTip": "C:\\Users\\PanSt\\source\\repos\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\Application\\LesionService.cs",
               "RelativeToolTip": "Application\\LesionService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAwAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-16T07:36:50.847Z",
               "EditorCaption": ""

@@ -2,8 +2,6 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpErrorResponse, HttpHeaders} from '@angular/common/http';
 import { Observable, map, from, throwError } from 'rxjs';
 import { catchError, switchMap } from 'rxjs/operators';
-import { resolve } from 'path';
-import { rejects } from 'assert';
 import { Filters } from '../models/filters.model';
 
 @Injectable({
