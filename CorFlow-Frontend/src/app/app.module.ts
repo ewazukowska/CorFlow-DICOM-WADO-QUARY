@@ -47,5 +47,7 @@ import { NgChartsModule } from 'ng2-charts';
     FormsModule
   ],
   bootstrap: [AppComponent]
+  providers: [
+  ]
 })
 export class AppModule { }
