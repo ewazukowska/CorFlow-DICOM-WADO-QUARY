@@ -9,8 +9,10 @@ import { Filters } from '../models/filters.model';
 })
 
 export class ApiService {
-  private apiUrl = "http://localhost:44317";
-  private dicomControllerName = "Lesions";
+  private apiUrl = "http://localhost:8080";
+  private dicomControllerName = "ApiController";
+  private endpoint = "/api/Lesions";
+
   constructor(private http: HttpClient) {};
 
   postJson(filters: Filters | null): Observable<any> {
@@ -19,7 +21,9 @@ export class ApiService {
       'Accept': 'application/json',
     });
 
-    return this.http.post(`${this.apiUrl}/${this.dicomControllerName}`, filters, { headers, responseType: 'blob' })
+    return this.http.post(
+      `${this.apiUrl}/${this.dicomControllerName}/${this.endpoint}`, filters, 
+      { headers, responseType: 'blob' as 'json'})
       .pipe(
         catchError(this.handleError)
       );

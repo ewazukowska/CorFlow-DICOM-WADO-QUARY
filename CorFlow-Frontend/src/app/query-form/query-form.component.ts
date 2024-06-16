@@ -25,6 +25,8 @@ export class QueryFormComponent {
     occlusionLength: 0
   };
 
+  public responseBlob: Blob | null = null;
+
   constructor(private router: Router, private apiService: ApiService) { }
 
   @HostListener('document:keydown.enter', ['$event'])
@@ -37,6 +39,7 @@ export class QueryFormComponent {
     this.apiService.postJson(this.filters).subscribe({
       next: (results) => {
         console.log('Search results:', results);
+        this.responseBlob = results;
         this.navigateToResults();
       },
       error: (error) => {
@@ -46,7 +49,7 @@ export class QueryFormComponent {
   }
 
   private navigateToResults(): void {
-    this.router.navigate(['results']).then((success) => {
+    this.router.navigate(['results']).then((success: any) => {
       if (success) {
         console.log('Navigated to results successfully!');
       } else {
