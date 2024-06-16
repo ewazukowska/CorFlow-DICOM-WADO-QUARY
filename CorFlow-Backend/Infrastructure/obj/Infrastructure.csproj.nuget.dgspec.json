@@ -85,7 +85,7 @@
         "projectName": "Domain",
         "projectPath": "C:\\Users\\PanSt\\source\\repos\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\PanSt\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\PanSt\\Source\\Repos\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\Domain\\obj\\",
+        "outputPath": "C:\\Users\\PanSt\\source\\repos\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\PanSt\\AppData\\Roaming\\NuGet\\NuGet.Config",
