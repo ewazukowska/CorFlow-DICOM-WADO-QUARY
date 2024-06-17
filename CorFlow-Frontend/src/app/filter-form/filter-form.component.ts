@@ -8,6 +8,7 @@ import {NgxSliderModule, Options} from "@angular-slider/ngx-slider";
 import {HttpClientModule} from "@angular/common/http";
 import { Filters } from '../models/filters.model';
 import { error } from 'console';
+import { map } from 'rxjs';
 
 @Component({
   selector: 'app-filter-form',
@@ -24,6 +25,8 @@ import { error } from 'console';
 
 export class FilterFormComponent implements OnInit {
 
+  public responseList: any[] = []
+
   constructor(public router: Router, public apiService: ApiService) { }
 
   filters: any = {
@@ -39,8 +42,6 @@ export class FilterFormComponent implements OnInit {
     occlusionLength: 7,
     syntaxScore: 25
   }
-
-  responseBlob: Blob | null = null;
 
   // Ranges
   ageRange = { min: 0, max: 100 };
@@ -81,10 +82,12 @@ export class FilterFormComponent implements OnInit {
 
   filterQuery() {
     console.log('Submit pressed');
-    this.apiService.postJson(this.filters).subscribe({
-      next: (results: Blob) => {
+    this.apiService.postJson(this.filters).pipe(
+      map((response: any)=> response.result || [])
+    ).subscribe({
+      next: (results: any) => {
         console.log("Filter search results:", results);
-        this.responseBlob = results;
+        this.responseList = results;
       },
       error: (error) => {
         console.error("Filter search failed:", error);
