@@ -3,6 +3,7 @@ import { Router, RouterOutlet } from "@angular/router";
 import { ApiService } from '../services/api.service';
 import { Filters } from '../models/filters.model';
 import { map } from 'rxjs';
+import { Lesion } from '../models/lesions.model';
 
 @Component({
   selector: 'app-query-form',
@@ -26,7 +27,7 @@ export class QueryFormComponent {
     occlusionLength: 0
   };
 
-  public responseList: any[] = []
+  public responseList: Lesion[] = []
 
   constructor(private router: Router, private apiService: ApiService) { }
 
@@ -37,12 +38,11 @@ export class QueryFormComponent {
   }
 
   public submitQuery(): void {
-    this.apiService.postJson(this.filters).pipe(
-      map((response: any)=> response.result || [])
-    ).subscribe({
+    this.apiService.postJson(this.filters).subscribe({
       next: (results) => {
         console.log('Query search results:', results);
         this.responseList = results;
+        console.log(this.responseList);
         this.navigateToResults();
       },
       error: (error) => {

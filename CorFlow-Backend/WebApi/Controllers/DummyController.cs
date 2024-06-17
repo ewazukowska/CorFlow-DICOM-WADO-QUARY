@@ -2,6 +2,7 @@
 using Infrastructure.Data;
 using Application.Interfaces;
 using System.Threading.Tasks;
+using Domain.Entities;
 
 
 namespace WebApi.Controllers
@@ -21,11 +22,16 @@ namespace WebApi.Controllers
             _dummyService = dummyService;
         }
 
-        [HttpPost("lesions")]
-        public async Task<IActionResult> Lesions ()
+        [HttpGet("lesions")]
+        public ActionResult<IEnumerable<Lesion>> GetLesions()
         {
-            var result = _dummyService.GetAll();
-            return Ok();
+            var lesions = _dummyService.GetAll();
+            Console.WriteLine("Lesions:");
+            foreach (var lesion in lesions)
+            {
+                Console.WriteLine($" - {lesion.Attributes.TotalOcclusion}: {lesion}");
+            }
+            return Ok(lesions);
         }
     }
 }

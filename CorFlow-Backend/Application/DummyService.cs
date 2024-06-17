@@ -55,7 +55,7 @@ namespace Application
 
         public IEnumerable<Lesion> GetAll()
         {
-            return new List<Lesion>(_dummyData);
+            return _dummyData;
         }
 
         public Task<IEnumerable<Lesion>> GetAsync(CancellationToken cancellationToken)
