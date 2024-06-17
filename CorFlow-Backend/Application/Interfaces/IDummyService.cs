@@ -4,7 +4,7 @@ namespace Application.Interfaces
 {
     public interface IDummyService
     {
-        Task<IEnumerable<int>> GetAsync(CancellationToken cancellationToken);
-        IEnumerable<int> GetAll();
+        Task<IEnumerable<Lesion>> GetAsync(CancellationToken cancellationToken);
+        IEnumerable<Lesion> GetAll();
     }
 }
