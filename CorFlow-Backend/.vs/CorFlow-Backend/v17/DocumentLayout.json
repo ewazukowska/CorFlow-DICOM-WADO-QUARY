@@ -3,16 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\PanSt\\source\\repos\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{7C36D042-D954-416A-A429-DB020BAEBC51}|WebApi\\WebApi.csproj|c:\\users\\panst\\source\\repos\\corflow-dicom-wado-quary\\corflow-backend\\webapi\\controllers\\dummycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C36D042-D954-416A-A429-DB020BAEBC51}|WebApi\\WebApi.csproj|solutionrelative:webapi\\controllers\\dummycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7C36D042-D954-416A-A429-DB020BAEBC51}|WebApi\\WebApi.csproj|c:\\users\\panst\\source\\repos\\corflow-dicom-wado-quary\\corflow-backend\\webapi\\controllers\\lesionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7C36D042-D954-416A-A429-DB020BAEBC51}|WebApi\\WebApi.csproj|solutionrelative:webapi\\controllers\\lesionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4605F506-10B5-4741-8011-76E267E0CC0B}|Application\\Application.csproj|c:\\users\\panst\\source\\repos\\corflow-dicom-wado-quary\\corflow-backend\\application\\lesionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4605F506-10B5-4741-8011-76E267E0CC0B}|Application\\Application.csproj|solutionrelative:application\\lesionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4605F506-10B5-4741-8011-76E267E0CC0B}|Application\\Application.csproj|c:\\users\\panst\\source\\repos\\corflow-dicom-wado-quary\\corflow-backend\\application\\interfaces\\ilesionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4605F506-10B5-4741-8011-76E267E0CC0B}|Application\\Application.csproj|solutionrelative:application\\interfaces\\ilesionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C36D042-D954-416A-A429-DB020BAEBC51}|WebApi\\WebApi.csproj|c:\\users\\panst\\source\\repos\\corflow-dicom-wado-quary\\corflow-backend\\webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C36D042-D954-416A-A429-DB020BAEBC51}|WebApi\\WebApi.csproj|solutionrelative:webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C36D042-D954-416A-A429-DB020BAEBC51}|WebApi\\WebApi.csproj|c:\\users\\panst\\source\\repos\\corflow-dicom-wado-quary\\corflow-backend\\webapi\\controllers\\baseapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C36D042-D954-416A-A429-DB020BAEBC51}|WebApi\\WebApi.csproj|solutionrelative:webapi\\controllers\\baseapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4605F506-10B5-4741-8011-76E267E0CC0B}|Application\\Application.csproj|c:\\users\\panst\\source\\repos\\corflow-dicom-wado-quary\\corflow-backend\\application\\lesionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4605F506-10B5-4741-8011-76E267E0CC0B}|Application\\Application.csproj|solutionrelative:application\\lesionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,11 +34,50 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DummyController.cs",
+              "DocumentMoniker": "C:\\Users\\PanSt\\source\\repos\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\WebApi\\Controllers\\DummyController.cs",
+              "RelativeDocumentMoniker": "WebApi\\Controllers\\DummyController.cs",
+              "ToolTip": "C:\\Users\\PanSt\\source\\repos\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\WebApi\\Controllers\\DummyController.cs",
+              "RelativeToolTip": "WebApi\\Controllers\\DummyController.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAAABoAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-17T07:59:28.865Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\PanSt\\source\\repos\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\WebApi\\Program.cs",
+              "RelativeDocumentMoniker": "WebApi\\Program.cs",
+              "ToolTip": "C:\\Users\\PanSt\\source\\repos\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\WebApi\\Program.cs",
+              "RelativeToolTip": "WebApi\\Program.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAkwB4AAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-17T07:38:49.118Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LesionsController.cs",
+              "DocumentMoniker": "C:\\Users\\PanSt\\source\\repos\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\WebApi\\Controllers\\LesionsController.cs",
+              "RelativeDocumentMoniker": "WebApi\\Controllers\\LesionsController.cs",
+              "ToolTip": "C:\\Users\\PanSt\\source\\repos\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\WebApi\\Controllers\\LesionsController.cs",
+              "RelativeToolTip": "WebApi\\Controllers\\LesionsController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T07:38:45.078Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -36,32 +87,33 @@
               "RelativeDocumentMoniker": "Application\\Interfaces\\ILesionService.cs",
               "ToolTip": "C:\\Users\\PanSt\\source\\repos\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\Application\\Interfaces\\ILesionService.cs",
               "RelativeToolTip": "Application\\Interfaces\\ILesionService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAA6AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAABdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-16T08:15:25.762Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "LesionsController.cs",
-              "DocumentMoniker": "C:\\Users\\PanSt\\source\\repos\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\WebApi\\Controllers\\LesionsController.cs",
-              "RelativeDocumentMoniker": "WebApi\\Controllers\\LesionsController.cs",
-              "ToolTip": "C:\\Users\\PanSt\\source\\repos\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\WebApi\\Controllers\\LesionsController.cs",
-              "RelativeToolTip": "WebApi\\Controllers\\LesionsController.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAAACQAAABDAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-16T07:38:45.078Z",
+              "WhenOpened": "2024-06-17T07:34:46.246Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
+              "Title": "BaseApiController.cs",
+              "DocumentMoniker": "C:\\Users\\PanSt\\source\\repos\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\WebApi\\Controllers\\BaseApiController.cs",
+              "RelativeDocumentMoniker": "WebApi\\Controllers\\BaseApiController.cs",
+              "ToolTip": "C:\\Users\\PanSt\\source\\repos\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\WebApi\\Controllers\\BaseApiController.cs",
+              "RelativeToolTip": "WebApi\\Controllers\\BaseApiController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-17T07:31:41.539Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "LesionService.cs",
               "DocumentMoniker": "C:\\Users\\PanSt\\source\\repos\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\Application\\LesionService.cs",
               "RelativeDocumentMoniker": "Application\\LesionService.cs",
               "ToolTip": "C:\\Users\\PanSt\\source\\repos\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\Application\\LesionService.cs",
               "RelativeToolTip": "Application\\LesionService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAyAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-16T07:36:50.847Z"
             }

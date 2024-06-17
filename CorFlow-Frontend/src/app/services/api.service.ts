@@ -11,6 +11,7 @@ import { Filters } from '../models/filters.model';
 export class ApiService {
   private apiUrl = "http://localhost:8080";
   private endpoint = "api/Lesions";
+  private dummyEndpoint = "dummy/Lesions";
 
   constructor(private http: HttpClient) {};
 
@@ -21,7 +22,7 @@ export class ApiService {
     });
 
     return this.http.post(
-      `${this.apiUrl}/${this.endpoint}`, filters, 
+      `${this.apiUrl}/${this.dummyEndpoint}`, filters, 
       { headers, responseType: 'blob' as 'json'})
       .pipe(
         catchError(this.handleError)
