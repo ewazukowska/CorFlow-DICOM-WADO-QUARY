@@ -21,5 +21,9 @@ namespace Application
             return Task.FromResult<IEnumerable<Lesion>>(_dummyData);    
         }
 
+        public IEnumerable<Lesion> GetAll() 
+        { 
+            return _dummyData;
+        }
     }
 }

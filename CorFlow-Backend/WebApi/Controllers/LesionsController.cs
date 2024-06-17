@@ -3,11 +3,8 @@ using JsonApiDotNetCore.Controllers;
 using JsonApiDotNetCore.Services;
 using Domain.Entities;
 using JsonApiDotNetCore.Configuration;
-using Application;
 using Infrastructure.Data;
-using Microsoft.EntityFrameworkCore;
 using Application.Interfaces;
-using System.Threading;
 
 namespace WebApi.Controllers
 {
@@ -47,13 +44,6 @@ namespace WebApi.Controllers
                 Console.WriteLine($"Error creating lesion: {ex.Message}");
                 return StatusCode(500, "Error creating lesion");
             }
-        }
-
-        [HttpPost("dummy")]
-        public IActionResult DummyEndpoint()
-        {
-            Console.WriteLine("Dummy endpoint called");
-            return Ok("Dummy endpoint was called");
         }
     }
 }
