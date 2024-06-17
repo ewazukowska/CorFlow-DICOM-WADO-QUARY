@@ -16,12 +16,12 @@ namespace WebApi.Controllers
         private readonly ILesionService _lesionService;
 
         public LesionsController(
-            IJsonApiOptions options, 
-            IResourceGraph resourceGraph, 
-            ILoggerFactory loggerFactory, 
-            IResourceService<Lesion, Guid> resourceService, 
+            IJsonApiOptions options,
+            IResourceGraph resourceGraph,
+            ILoggerFactory loggerFactory,
+            IResourceService<Lesion, Guid> resourceService,
             ApplicationDbContext context,
-            ILesionService lesionService) 
+            ILesionService lesionService)
             : base(options, resourceGraph, loggerFactory, resourceService)
         {
             _context = context;
@@ -39,7 +39,7 @@ namespace WebApi.Controllers
                 var lesions = await _lesionService.GetAsync(entity, cancellationToken).ConfigureAwait(false);
                 return Ok(lesions);
             }
-            catch (Exception ex) 
+            catch (Exception ex)
             {
                 Console.WriteLine($"Error creating lesion: {ex.Message}");
                 return StatusCode(500, "Error creating lesion");

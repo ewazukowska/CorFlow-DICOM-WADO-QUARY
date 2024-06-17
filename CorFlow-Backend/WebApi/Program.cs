@@ -14,20 +14,27 @@ internal class Program
     {
         var builder = WebApplication.CreateBuilder(args);
 
-        builder.Services.AddDbContext<ApplicationDbContext>(options =>
+
+        //builder.Services.AddDbContext<ApplicationDbContext>(options =>
+        //    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+        builder.Services.AddDbContext<DummyDbContext>(options =>
             options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
         builder.Services.AddHealthChecks()
           .AddSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 
+        /*
         builder.Services.AddJsonApi<ApplicationDbContext>(options =>
         {
             options.Namespace = "api";
             options.UseRelativeLinks = true;
             options.AllowUnknownQueryStringParameters = true;
         });
+        */
 
-        builder.Services.AddScoped<ILesionService, LesionService>();
+        //builder.Services.AddScoped<ILesionService, LesionService>();
+        builder.Services.AddScoped<IDummyService, DummyService>();
         builder.Services.AddControllers();
         builder.Services.AddEndpointsApiExplorer();
         builder.Services.AddSwaggerGen();
@@ -40,7 +47,7 @@ internal class Program
         builder.Host.UseSerilog((context, configuration) =>
             configuration.ReadFrom.Configuration(context.Configuration));
 
-        builder.Services.AddJsonApi<ApplicationDbContext>();
+       // builder.Services.AddJsonApi<ApplicationDbContext>();
 
         var app = builder.Build();
 

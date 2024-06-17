@@ -83,11 +83,11 @@ export class FilterFormComponent implements OnInit {
     console.log('Submit pressed');
     this.apiService.postJson(this.filters).subscribe({
       next: (results: Blob) => {
-        console.log("Search results:", results);
+        console.log("Filter search results:", results);
         this.responseBlob = results;
       },
       error: (error) => {
-        console.error("Search failed:", error);
+        console.error("Filter search failed:", error);
       }
     });
     console.log("Filters sent");
