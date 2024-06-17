@@ -9,9 +9,9 @@ import { Filters } from '../models/filters.model';
 })
 
 export class ApiService {
-  private apiUrl = "http://localhost:8080";
+  private apiUrl = "http://localhost:5021";
   private endpoint = "api/Lesions";
-  private dummyEndpoint = "dummy/Lesions";
+  private dummyEndpoint = "dummy/lesions";
 
   constructor(private http: HttpClient) {};
 

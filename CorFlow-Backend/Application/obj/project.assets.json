@@ -982,11 +982,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\PanSt\\source\\repos\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\Application\\Application.csproj",
+      "projectUniqueName": "C:\\Users\\PanSt\\CorFlow-DICOM-WADO-QUARY-4\\CorFlow-Backend\\Application\\Application.csproj",
       "projectName": "Application",
-      "projectPath": "C:\\Users\\PanSt\\source\\repos\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\Application\\Application.csproj",
+      "projectPath": "C:\\Users\\PanSt\\CorFlow-DICOM-WADO-QUARY-4\\CorFlow-Backend\\Application\\Application.csproj",
       "packagesPath": "C:\\Users\\PanSt\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\PanSt\\source\\repos\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\Application\\obj\\",
+      "outputPath": "C:\\Users\\PanSt\\CorFlow-DICOM-WADO-QUARY-4\\CorFlow-Backend\\Application\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\PanSt\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1003,8 +1003,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\PanSt\\source\\repos\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\Domain\\Domain.csproj": {
-              "projectPath": "C:\\Users\\PanSt\\source\\repos\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\Domain\\Domain.csproj"
+            "C:\\Users\\PanSt\\CorFlow-DICOM-WADO-QUARY-4\\CorFlow-Backend\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Users\\PanSt\\CorFlow-DICOM-WADO-QUARY-4\\CorFlow-Backend\\Domain\\Domain.csproj"
             }
           }
         }

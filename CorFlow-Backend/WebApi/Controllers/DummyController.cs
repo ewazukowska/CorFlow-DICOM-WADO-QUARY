@@ -6,25 +6,25 @@ using System.Threading.Tasks;
 
 namespace WebApi.Controllers
 {
-    [Route("test/[controller]")]
+    [Route("dummy")]
     [ApiController]
     public class DummyController : BaseApiController
     {
-        private readonly ApplicationDbContext _contextDummy;
-        private readonly ILesionService _lesionServiceDummy;
+        private readonly DummyDbContext _context;
+        private readonly IDummyService _dummyService;
 
         public DummyController(
-            ApplicationDbContext context,
-            ILesionService lesionService)
+            IDummyService dummyService,
+            DummyDbContext context)
         {
-            _contextDummy = context;
-            _lesionServiceDummy = lesionService;
+            _context = context;
+            _dummyService = dummyService;
         }
 
-        [HttpPost]
-        public async Task<IActionResult> GetDicoms ()
+        [HttpPost("lesions")]
+        public async Task<IActionResult> Lesions ()
         {
-            var result = _lesionServiceDummy.GetAll();
+            var result = _dummyService.GetAll();
             return Ok();
         }
     }

@@ -2,6 +2,7 @@ import { Component, HostListener } from '@angular/core';
 import { Router, RouterOutlet } from "@angular/router";
 import { ApiService } from '../services/api.service';
 import { Filters } from '../models/filters.model';
+import { map } from 'rxjs';
 
 @Component({
   selector: 'app-query-form',
@@ -25,7 +26,7 @@ export class QueryFormComponent {
     occlusionLength: 0
   };
 
-  public responseBlob: Blob | null = null;
+  public responseList: any[] = []
 
   constructor(private router: Router, private apiService: ApiService) { }
 
@@ -36,16 +37,18 @@ export class QueryFormComponent {
   }
 
   public submitQuery(): void {
-    this.apiService.postJson(this.filters).subscribe({
+    this.apiService.postJson(this.filters).pipe(
+      map((response: any)=> response.result || [])
+    ).subscribe({
       next: (results) => {
-        console.log('Search results:', results);
-        this.responseBlob = results;
+        console.log('Query search results:', results);
+        this.responseList = results;
         this.navigateToResults();
       },
       error: (error) => {
-        console.error('Search failed:', error);
+        console.error('Query search failed:', error);
       }
-    });
+    })
   }
 
   private navigateToResults(): void {

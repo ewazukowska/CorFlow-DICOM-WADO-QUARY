@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "V+IQPshb4Vz8BjQobCsCEO/y/4I+8OEt0PyNIQ4sikttR1zDyGI4fZpcYpV8O8zsCHmIMh0u3JgwjCl3F6e0iA==",
+  "dgSpecHash": "C0XXF6T3E5RH1lv6ORceRka9ClDdLYbShYiKj8B8nao3PNHAIUq3VxJ5D2vxfJqk2a5Dx/KufqYAAZyx6t/7DQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\PanSt\\source\\repos\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\Application\\Application.csproj",
+  "projectFilePath": "C:\\Users\\PanSt\\CorFlow-DICOM-WADO-QUARY-4\\CorFlow-Backend\\Application\\Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\PanSt\\.nuget\\packages\\ben.demystifier\\0.4.1\\ben.demystifier.0.4.1.nupkg.sha512",
     "C:\\Users\\PanSt\\.nuget\\packages\\fluentvalidation\\11.9.0\\fluentvalidation.11.9.0.nupkg.sha512",
