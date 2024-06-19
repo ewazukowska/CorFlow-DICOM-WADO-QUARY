@@ -1,29 +1,27 @@
 ﻿using Application.Interfaces;
 using Domain.Entities;
+using Infrastructure.Data;
+using Microsoft.EntityFrameworkCore; // check install here
 
 namespace Application
 {
     public class LesionService : ILesionService
     {
-        private List<Lesion> _dummyData;
+        private readonly IResourceRepository<Lesion, Guid> _repository;
 
-        public LesionService() 
-        { 
-            _dummyData = new List<Lesion>
-            {
-                new Lesion { Id = Guid.NewGuid()},
-                new Lesion { Id = Guid.NewGuid()}
-            };
-        }
-
-        public Task<IEnumerable<Lesion>> GetAsync(Lesion entity, CancellationToken cancellationToken)
+        public LesionService(IResourceRepository<Lesion, Guid> repository)
         {
-            return Task.FromResult<IEnumerable<Lesion>>(_dummyData);    
+            _repository = repository;
         }
 
-        public IEnumerable<Lesion> GetAll() 
-        { 
-            return _dummyData;
+        public async Task<IEnumerable<Lesion>> GetAsync(Lesion entity, CancellationToken cancellationToken)
+        {
+            var lesions = await _repository.GetAsync(cancellationToken: cancellationToken);
+            return lesions;
+        }
+        public IEnumerable<Lesion> GetAll()
+        {
+            return _repository.Get().ToList();
         }
     }
 }

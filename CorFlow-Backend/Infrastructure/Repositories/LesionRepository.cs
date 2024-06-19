@@ -1,17 +1,54 @@
-﻿using Application.Interfaces;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading;
+using System.Threading.Tasks;
+using Application.Interfaces;
+using Domain.Entities;
+using Microsoft.EntityFrameworkCore;
+using Infrastructure.Data; // Assuming ApplicationDbContext is defined here
 
 namespace Infrastructure.Repositories
 {
-    public class Lesion : ILesionService
+    public class LesionRepository : ILesionService
     {
-        public IEnumerable<Domain.Entities.Lesion> GetAll()
+        private readonly ApplicationDbContext _context;
+
+        public LesionRepository(ApplicationDbContext context)
         {
-            throw new NotImplementedException();
+            _context = context;
         }
 
-        public Task<IEnumerable<Domain.Entities.Lesion>> GetAsync(Domain.Entities.Lesion entity, CancellationToken cancellationToken)
+        public IEnumerable<Lesion> GetAll()
         {
-            throw new NotImplementedException();
+            return _context.Lesions.ToList();
+        }
+
+        public async Task<IEnumerable<Lesion>> GetAsync(Lesion entity, CancellationToken cancellationToken)
+        {
+            var query = _context.Lesions.AsQueryable();
+
+            if (entity != null)
+            {
+                if (entity.Id != Guid.Empty)
+                {
+                    query = query.Where(l => l.Id == entity.Id);
+                }
+                if (!string.IsNullOrWhiteSpace(entity.Name))
+                {
+                    query = query.Where(l => l.Name.Contains(entity.Name));
+                }
+                if (!string.IsNullOrWhiteSpace(entity.Description))
+                {
+                    query = query.Where(l => l.Description.Contains(entity.Description));
+                }
+                if (entity.DateDetected != default(DateTime))
+                {
+                    query = query.Where(l => l.DateDetected.Date == entity.DateDetected.Date);
+                }
+            }
+
+            return await query.ToListAsync(cancellationToken);
         }
     }
 }
