@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Ort+BDBV8EWmRQYLretqFZR8GC6E3iBB/ETCXLeOEwHZhw9wo4MchKNOC+tyKltKDY2CuTu8NUvtHEVpPu4Eew==",
+  "dgSpecHash": "BMElXOpf4/B8TyYLTKDurVFut4qB3fD8RMvHvWr78OwGaXaD4OD2V6les4XmZl7oVtUsI39etJIrCY21pAjsSw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\PanSt\\CorFlow-DICOM-WADO-QUARY-4\\CorFlow-Backend\\Domain\\Domain.csproj",
+  "projectFilePath": "C:\\Users\\PanSt\\CorFlow-DICOM-WADO-QUARY-5\\CorFlow-Backend\\Domain\\Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\PanSt\\.nuget\\packages\\ben.demystifier\\0.4.1\\ben.demystifier.0.4.1.nupkg.sha512",
     "C:\\Users\\PanSt\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

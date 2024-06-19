@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\CorFlow-Backend",
+    "\\CorFlow-Backend\\WebApi",
+    "\\CorFlow-Backend\\WebApi\\Controllers"
   ],
-  "SelectedNode": "\\CorFlow-Backend.sln",
+  "SelectedNode": "\\CorFlow-Backend\\WebApi\\Controllers\\DummyController.cs",
   "PreviewInSolutionExplorer": false
 }

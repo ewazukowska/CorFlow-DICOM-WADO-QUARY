@@ -82,9 +82,7 @@ export class FilterFormComponent implements OnInit {
 
   filterQuery() {
     console.log('Submit pressed');
-    this.apiService.postJson(this.filters).pipe(
-      map((response: any)=> response.result || [])
-    ).subscribe({
+    this.apiService.postJson(this.filters).subscribe({
       next: (results: any) => {
         console.log("Filter search results:", results);
         this.responseList = results;

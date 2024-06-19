@@ -34,6 +34,7 @@ internal class Program
         */
 
         //builder.Services.AddScoped<ILesionService, LesionService>();
+        builder.AddScoped<IResourceRepository<Lesion, Guid>, LesionRepository>();
         builder.Services.AddScoped<IDummyService, DummyService>();
         builder.Services.AddControllers();
         builder.Services.AddEndpointsApiExplorer();
