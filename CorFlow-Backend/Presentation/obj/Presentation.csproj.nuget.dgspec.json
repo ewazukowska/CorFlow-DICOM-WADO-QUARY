@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\PanSt\\CorFlow-DICOM-WADO-QUARY-5\\CorFlow-Backend\\Presentation\\Presentation.csproj": {}
+    "C:\\Users\\PanSt\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\Presentation\\Presentation.csproj": {}
   },
   "projects": {
-    "C:\\Users\\PanSt\\CorFlow-DICOM-WADO-QUARY-5\\CorFlow-Backend\\Presentation\\Presentation.csproj": {
+    "C:\\Users\\PanSt\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\Presentation\\Presentation.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\PanSt\\CorFlow-DICOM-WADO-QUARY-5\\CorFlow-Backend\\Presentation\\Presentation.csproj",
+        "projectUniqueName": "C:\\Users\\PanSt\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\Presentation\\Presentation.csproj",
         "projectName": "Presentation",
-        "projectPath": "C:\\Users\\PanSt\\CorFlow-DICOM-WADO-QUARY-5\\CorFlow-Backend\\Presentation\\Presentation.csproj",
+        "projectPath": "C:\\Users\\PanSt\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\Presentation\\Presentation.csproj",
         "packagesPath": "C:\\Users\\PanSt\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\PanSt\\CorFlow-DICOM-WADO-QUARY-5\\CorFlow-Backend\\Presentation\\obj\\",
+        "outputPath": "C:\\Users\\PanSt\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\Presentation\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\PanSt\\AppData\\Roaming\\NuGet\\NuGet.Config",

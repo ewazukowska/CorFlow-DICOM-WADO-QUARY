@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Tfuu2b2F1VGMkOOtaRFU2UXzgBTMywIWv3VdBK4JiMXXbTtSSfjElgwvXTtL2c2RYtsPF4tFebyZOSwf4FPG8Q==",
+  "dgSpecHash": "OHvRlnTWRHjHHeBEEhXmAum3FVjwoCiRqw4MYbGG/8zXi7+j297auq/XWg3dAt6t/4rt1/QBmWCIwb8oEe7Ckg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\PanSt\\CorFlow-DICOM-WADO-QUARY-5\\CorFlow-Backend\\Application\\Application.csproj",
+  "projectFilePath": "C:\\Users\\PanSt\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\Application\\Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\PanSt\\.nuget\\packages\\ben.demystifier\\0.4.1\\ben.demystifier.0.4.1.nupkg.sha512",
     "C:\\Users\\PanSt\\.nuget\\packages\\fluentvalidation\\11.9.0\\fluentvalidation.11.9.0.nupkg.sha512",
@@ -13,9 +13,9 @@
     "C:\\Users\\PanSt\\.nuget\\packages\\jsonapidotnetcore.sourcegenerators\\5.5.1\\jsonapidotnetcore.sourcegenerators.5.5.1.nupkg.sha512",
     "C:\\Users\\PanSt\\.nuget\\packages\\mediatr\\12.2.0\\mediatr.12.2.0.nupkg.sha512",
     "C:\\Users\\PanSt\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
-    "C:\\Users\\PanSt\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.6\\microsoft.entityframeworkcore.8.0.6.nupkg.sha512",
-    "C:\\Users\\PanSt\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\8.0.6\\microsoft.entityframeworkcore.abstractions.8.0.6.nupkg.sha512",
-    "C:\\Users\\PanSt\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\8.0.6\\microsoft.entityframeworkcore.analyzers.8.0.6.nupkg.sha512",
+    "C:\\Users\\PanSt\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.4\\microsoft.entityframeworkcore.8.0.4.nupkg.sha512",
+    "C:\\Users\\PanSt\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\8.0.4\\microsoft.entityframeworkcore.abstractions.8.0.4.nupkg.sha512",
+    "C:\\Users\\PanSt\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\8.0.4\\microsoft.entityframeworkcore.analyzers.8.0.4.nupkg.sha512",
     "C:\\Users\\PanSt\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\8.0.0\\microsoft.entityframeworkcore.relational.8.0.0.nupkg.sha512",
     "C:\\Users\\PanSt\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\8.0.0\\microsoft.extensions.caching.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\PanSt\\.nuget\\packages\\microsoft.extensions.caching.memory\\8.0.0\\microsoft.extensions.caching.memory.8.0.0.nupkg.sha512",

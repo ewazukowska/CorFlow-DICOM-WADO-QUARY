@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vH3y4y2k3zMBygnobOeeOOyPXK7vPXLedAMfHATDWOMbBBtR0J40v3jEIAZKa6+Ehtc1j1iPUu1UOG9aZoe1tw==",
-  "success": false,
-  "projectFilePath": "C:\\Users\\PanSt\\CorFlow-DICOM-WADO-QUARY-5\\CorFlow-Backend\\Infrastructure\\Infrastructure.csproj",
+  "dgSpecHash": "FIRO448rqUhdvLDJe76bOO0K+CrekihVMOxf8W2i4xFfA25ZbFnfYqO3i7A1IHzxVWkyleDoyGmMSomCxxaLRQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\PanSt\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\Infrastructure\\Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\PanSt\\.nuget\\packages\\ben.demystifier\\0.4.1\\ben.demystifier.0.4.1.nupkg.sha512",
     "C:\\Users\\PanSt\\.nuget\\packages\\fluentvalidation\\11.9.0\\fluentvalidation.11.9.0.nupkg.sha512",
@@ -28,15 +28,5 @@
     "C:\\Users\\PanSt\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
     "C:\\Users\\PanSt\\.nuget\\packages\\system.reflection.metadata\\5.0.0\\system.reflection.metadata.5.0.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1605",
-      "level": "Error",
-      "message": "Ostrzeżenie jako błąd: Wykryto obniżenie wersji pakietu: Microsoft.EntityFrameworkCore z 8.0.6 na 8.0.4. Aby wybrać inną wersję, odwołaj się do pakietu bezpośrednio z projektu. \r\n Infrastructure -> Application -> Microsoft.EntityFrameworkCore (>= 8.0.6) \r\n Infrastructure -> Microsoft.EntityFrameworkCore (>= 8.0.4)",
-      "libraryId": "Microsoft.EntityFrameworkCore",
-      "targetGraphs": [
-        "net8.0"
-      ]
-    }
-  ]
+  "logs": []
 }
