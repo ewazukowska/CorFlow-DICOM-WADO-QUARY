@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Yxs/k6m1tdirWdwMyA69wEeNLhRG7KaIhu0qCAw4Bh86470rva5BbJcY+HvaLm9EvBb0AzTe6WghHun3cc3q4w==",
-  "success": false,
-  "projectFilePath": "C:\\Users\\PanSt\\CorFlow-DICOM-WADO-QUARY-5\\CorFlow-Backend\\WebApi\\WebApi.csproj",
+  "dgSpecHash": "oJPCyTMBT8I9dYl1AwlTBOjLwutExPdFkANDzGu34wxtTkyvydD6WhsJi/zkPe4POvPIB7NQyoj9ia7YH5Phzw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\PanSt\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\WebApi\\WebApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\PanSt\\.nuget\\packages\\aspnetcore.healthchecks.sqlserver\\8.0.2\\aspnetcore.healthchecks.sqlserver.8.0.2.nupkg.sha512",
     "C:\\Users\\PanSt\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
@@ -198,15 +198,5 @@
     "C:\\Users\\PanSt\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\PanSt\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1605",
-      "level": "Error",
-      "message": "Ostrzeżenie jako błąd: Wykryto obniżenie wersji pakietu: Microsoft.EntityFrameworkCore z 8.0.6 na 8.0.4. Aby wybrać inną wersję, odwołaj się do pakietu bezpośrednio z projektu. \r\n WebApi -> Application -> Microsoft.EntityFrameworkCore (>= 8.0.6) \r\n WebApi -> Microsoft.EntityFrameworkCore (>= 8.0.4)",
-      "libraryId": "Microsoft.EntityFrameworkCore",
-      "targetGraphs": [
-        "net8.0"
-      ]
-    }
-  ]
+  "logs": []
 }

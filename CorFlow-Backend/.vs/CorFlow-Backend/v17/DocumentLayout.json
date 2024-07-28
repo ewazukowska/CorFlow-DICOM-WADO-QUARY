@@ -1,46 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\PanSt\\CorFlow-DICOM-WADO-QUARY-5\\CorFlow-Backend\\",
+  "WorkspaceRootPath": "C:\\Users\\PanSt\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D98AADA4-AD7E-42B3-B0A8-BCC8EF51F837}|Domain\\Domain.csproj|c:\\users\\panst\\corflow-dicom-wado-quary-5\\corflow-backend\\domain\\entities\\lesion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4605F506-10B5-4741-8011-76E267E0CC0B}|Application\\Application.csproj|c:\\users\\panst\\corflow-dicom-wado-quary\\corflow-backend\\application\\lesionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4605F506-10B5-4741-8011-76E267E0CC0B}|Application\\Application.csproj|solutionrelative:application\\lesionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4605F506-10B5-4741-8011-76E267E0CC0B}|Application\\Application.csproj|c:\\users\\panst\\corflow-dicom-wado-quary\\corflow-backend\\application\\repositories\\lesionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4605F506-10B5-4741-8011-76E267E0CC0B}|Application\\Application.csproj|solutionrelative:application\\repositories\\lesionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4605F506-10B5-4741-8011-76E267E0CC0B}|Application\\Application.csproj|c:\\users\\panst\\corflow-dicom-wado-quary\\corflow-backend\\application\\interfaces\\ilesionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4605F506-10B5-4741-8011-76E267E0CC0B}|Application\\Application.csproj|solutionrelative:application\\interfaces\\ilesionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4605F506-10B5-4741-8011-76E267E0CC0B}|Application\\Application.csproj|c:\\users\\panst\\corflow-dicom-wado-quary\\corflow-backend\\application\\application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{4605F506-10B5-4741-8011-76E267E0CC0B}|Application\\Application.csproj|solutionrelative:application\\application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D98AADA4-AD7E-42B3-B0A8-BCC8EF51F837}|Domain\\Domain.csproj|c:\\users\\panst\\corflow-dicom-wado-quary\\corflow-backend\\domain\\entities\\lesion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D98AADA4-AD7E-42B3-B0A8-BCC8EF51F837}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\lesion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{818F32F3-6A70-41EE-8481-DC2780C19EA5}|Infrastructure\\Infrastructure.csproj|c:\\users\\panst\\corflow-dicom-wado-quary-5\\corflow-backend\\infrastructure\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{818F32F3-6A70-41EE-8481-DC2780C19EA5}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{818F32F3-6A70-41EE-8481-DC2780C19EA5}|Infrastructure\\Infrastructure.csproj|c:\\users\\panst\\corflow-dicom-wado-quary-5\\corflow-backend\\infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{818F32F3-6A70-41EE-8481-DC2780C19EA5}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7C36D042-D954-416A-A429-DB020BAEBC51}|WebApi\\WebApi.csproj|c:\\users\\panst\\corflow-dicom-wado-quary-5\\corflow-backend\\webapi\\controllers\\dummycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7C36D042-D954-416A-A429-DB020BAEBC51}|WebApi\\WebApi.csproj|solutionrelative:webapi\\controllers\\dummycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4605F506-10B5-4741-8011-76E267E0CC0B}|Application\\Application.csproj|c:\\users\\panst\\corflow-dicom-wado-quary-5\\corflow-backend\\application\\dummyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4605F506-10B5-4741-8011-76E267E0CC0B}|Application\\Application.csproj|solutionrelative:application\\dummyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4605F506-10B5-4741-8011-76E267E0CC0B}|Application\\Application.csproj|c:\\users\\panst\\corflow-dicom-wado-quary-5\\corflow-backend\\application\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4605F506-10B5-4741-8011-76E267E0CC0B}|Application\\Application.csproj|solutionrelative:application\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4605F506-10B5-4741-8011-76E267E0CC0B}|Application\\Application.csproj|c:\\users\\panst\\corflow-dicom-wado-quary-5\\corflow-backend\\application\\interfaces\\idummyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4605F506-10B5-4741-8011-76E267E0CC0B}|Application\\Application.csproj|solutionrelative:application\\interfaces\\idummyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7C36D042-D954-416A-A429-DB020BAEBC51}|WebApi\\WebApi.csproj|c:\\users\\panst\\corflow-dicom-wado-quary-5\\corflow-backend\\webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7C36D042-D954-416A-A429-DB020BAEBC51}|WebApi\\WebApi.csproj|c:\\users\\panst\\corflow-dicom-wado-quary\\corflow-backend\\webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7C36D042-D954-416A-A429-DB020BAEBC51}|WebApi\\WebApi.csproj|solutionrelative:webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{818F32F3-6A70-41EE-8481-DC2780C19EA5}|Infrastructure\\Infrastructure.csproj|c:\\users\\panst\\corflow-dicom-wado-quary-5\\corflow-backend\\infrastructure\\data\\dummydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{818F32F3-6A70-41EE-8481-DC2780C19EA5}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\data\\dummydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7C36D042-D954-416A-A429-DB020BAEBC51}|WebApi\\WebApi.csproj|c:\\users\\panst\\corflow-dicom-wado-quary-5\\corflow-backend\\webapi\\controllers\\baseapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7C36D042-D954-416A-A429-DB020BAEBC51}|WebApi\\WebApi.csproj|solutionrelative:webapi\\controllers\\baseapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,135 +34,89 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LesionRepository.cs",
+              "DocumentMoniker": "C:\\Users\\PanSt\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\Application\\Repositories\\LesionRepository.cs",
+              "RelativeDocumentMoniker": "Application\\Repositories\\LesionRepository.cs",
+              "ToolTip": "C:\\Users\\PanSt\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\Application\\Repositories\\LesionRepository.cs",
+              "RelativeToolTip": "Application\\Repositories\\LesionRepository.cs",
+              "ViewState": "AQIAAFAAAAAAAAAAAAAAAAwAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-28T16:57:08.719Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ILesionRepository.cs",
+              "DocumentMoniker": "C:\\Users\\PanSt\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\Application\\Interfaces\\ILesionRepository.cs",
+              "RelativeDocumentMoniker": "Application\\Interfaces\\ILesionRepository.cs",
+              "ToolTip": "C:\\Users\\PanSt\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\Application\\Interfaces\\ILesionRepository.cs",
+              "RelativeToolTip": "Application\\Interfaces\\ILesionRepository.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAA8AAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-28T16:52:11.764Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LesionService.cs",
+              "DocumentMoniker": "C:\\Users\\PanSt\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\Application\\LesionService.cs",
+              "RelativeDocumentMoniker": "Application\\LesionService.cs",
+              "ToolTip": "C:\\Users\\PanSt\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\Application\\LesionService.cs",
+              "RelativeToolTip": "Application\\LesionService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-28T16:06:41.586Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Application",
+              "DocumentMoniker": "C:\\Users\\PanSt\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\Application\\Application.csproj",
+              "RelativeDocumentMoniker": "Application\\Application.csproj",
+              "ToolTip": "C:\\Users\\PanSt\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\Application\\Application.csproj",
+              "RelativeToolTip": "Application\\Application.csproj",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAtwBQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-07-28T16:05:52.345Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\PanSt\\CorFlow-DICOM-WADO-QUARY-5\\CorFlow-Backend\\Infrastructure\\Data\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\Data\\ApplicationDbContext.cs",
-              "ToolTip": "C:\\Users\\PanSt\\CorFlow-DICOM-WADO-QUARY-5\\CorFlow-Backend\\Infrastructure\\Data\\ApplicationDbContext.cs",
-              "RelativeToolTip": "Infrastructure\\Data\\ApplicationDbContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T14:27:52.845Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "DependencyInjection.cs",
-              "DocumentMoniker": "C:\\Users\\PanSt\\CorFlow-DICOM-WADO-QUARY-5\\CorFlow-Backend\\Infrastructure\\DependencyInjection.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\DependencyInjection.cs",
-              "ToolTip": "C:\\Users\\PanSt\\CorFlow-DICOM-WADO-QUARY-5\\CorFlow-Backend\\Infrastructure\\DependencyInjection.cs",
-              "RelativeToolTip": "Infrastructure\\DependencyInjection.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-19T14:27:50.291Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "Lesion.cs",
-              "DocumentMoniker": "C:\\Users\\PanSt\\CorFlow-DICOM-WADO-QUARY-5\\CorFlow-Backend\\Domain\\Entities\\Lesion.cs",
+              "DocumentMoniker": "C:\\Users\\PanSt\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\Domain\\Entities\\Lesion.cs",
               "RelativeDocumentMoniker": "Domain\\Entities\\Lesion.cs",
-              "ToolTip": "C:\\Users\\PanSt\\CorFlow-DICOM-WADO-QUARY-5\\CorFlow-Backend\\Domain\\Entities\\Lesion.cs",
+              "ToolTip": "C:\\Users\\PanSt\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\Domain\\Entities\\Lesion.cs",
               "RelativeToolTip": "Domain\\Entities\\Lesion.cs",
-              "ViewState": "AQIAADEAAAAAAAAAAAAmwFUAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-17T14:05:00.181Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "IDummyService.cs",
-              "DocumentMoniker": "C:\\Users\\PanSt\\CorFlow-DICOM-WADO-QUARY-5\\CorFlow-Backend\\Application\\Interfaces\\IDummyService.cs",
-              "RelativeDocumentMoniker": "Application\\Interfaces\\IDummyService.cs",
-              "ToolTip": "C:\\Users\\PanSt\\CorFlow-DICOM-WADO-QUARY-5\\CorFlow-Backend\\Application\\Interfaces\\IDummyService.cs",
-              "RelativeToolTip": "Application\\Interfaces\\IDummyService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-17T12:53:26.067Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\PanSt\\CorFlow-DICOM-WADO-QUARY-5\\CorFlow-Backend\\WebApi\\Program.cs",
-              "RelativeDocumentMoniker": "WebApi\\Program.cs",
-              "ToolTip": "C:\\Users\\PanSt\\CorFlow-DICOM-WADO-QUARY-5\\CorFlow-Backend\\WebApi\\Program.cs",
-              "RelativeToolTip": "WebApi\\Program.cs",
-              "ViewState": "AQIAABoAAAAAAAAAAADwvyEAAAAKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-17T12:47:10.842Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "DummyService.cs",
-              "DocumentMoniker": "C:\\Users\\PanSt\\CorFlow-DICOM-WADO-QUARY-5\\CorFlow-Backend\\Application\\DummyService.cs",
-              "RelativeDocumentMoniker": "Application\\DummyService.cs",
-              "ToolTip": "C:\\Users\\PanSt\\CorFlow-DICOM-WADO-QUARY-5\\CorFlow-Backend\\Application\\DummyService.cs",
-              "RelativeToolTip": "Application\\DummyService.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAADkAAAAeAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-17T12:34:23.272Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "DummyController.cs",
-              "DocumentMoniker": "C:\\Users\\PanSt\\CorFlow-DICOM-WADO-QUARY-5\\CorFlow-Backend\\WebApi\\Controllers\\DummyController.cs",
-              "RelativeDocumentMoniker": "WebApi\\Controllers\\DummyController.cs",
-              "ToolTip": "C:\\Users\\PanSt\\CorFlow-DICOM-WADO-QUARY-5\\CorFlow-Backend\\WebApi\\Controllers\\DummyController.cs",
-              "RelativeToolTip": "WebApi\\Controllers\\DummyController.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAgwCAAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-17T12:42:56.059Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "DependencyInjection.cs",
-              "DocumentMoniker": "C:\\Users\\PanSt\\CorFlow-DICOM-WADO-QUARY-5\\CorFlow-Backend\\Application\\DependencyInjection.cs",
-              "RelativeDocumentMoniker": "Application\\DependencyInjection.cs",
-              "ToolTip": "C:\\Users\\PanSt\\CorFlow-DICOM-WADO-QUARY-5\\CorFlow-Backend\\Application\\DependencyInjection.cs",
-              "RelativeToolTip": "Application\\DependencyInjection.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\PanSt\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\WebApi\\Program.cs",
+              "RelativeDocumentMoniker": "WebApi\\Program.cs",
+              "ToolTip": "C:\\Users\\PanSt\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\WebApi\\Program.cs",
+              "RelativeToolTip": "WebApi\\Program.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAAACsAAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-17T13:03:55.344Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "DummyDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\PanSt\\CorFlow-DICOM-WADO-QUARY-5\\CorFlow-Backend\\Infrastructure\\Data\\DummyDbContext.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\Data\\DummyDbContext.cs",
-              "ToolTip": "C:\\Users\\PanSt\\CorFlow-DICOM-WADO-QUARY-5\\CorFlow-Backend\\Infrastructure\\Data\\DummyDbContext.cs",
-              "RelativeToolTip": "Infrastructure\\Data\\DummyDbContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-17T12:57:21.409Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "BaseApiController.cs",
-              "DocumentMoniker": "C:\\Users\\PanSt\\CorFlow-DICOM-WADO-QUARY-5\\CorFlow-Backend\\WebApi\\Controllers\\BaseApiController.cs",
-              "RelativeDocumentMoniker": "WebApi\\Controllers\\BaseApiController.cs",
-              "ToolTip": "C:\\Users\\PanSt\\CorFlow-DICOM-WADO-QUARY-5\\CorFlow-Backend\\WebApi\\Controllers\\BaseApiController.cs",
-              "RelativeToolTip": "WebApi\\Controllers\\BaseApiController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-17T12:46:35.172Z"
+              "WhenOpened": "2024-06-17T12:47:10.842Z",
+              "EditorCaption": ""
             }
           ]
         }

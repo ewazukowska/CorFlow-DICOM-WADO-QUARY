@@ -3,8 +3,8 @@ using JsonApiDotNetCore.Controllers;
 using JsonApiDotNetCore.Services;
 using Domain.Entities;
 using JsonApiDotNetCore.Configuration;
-using Infrastructure.Data;
 using Application.Interfaces;
+using Domain.Data;
 
 namespace WebApi.Controllers
 {

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "yOihdrcK/LZJjmVr4m6G2an3B2vF2F77QLEYUty1R6nOHzKUNwB/pSUSoe+nRqTWkhY0e634yHRholbOgd23DA==",
+  "dgSpecHash": "37RJg5BdG3WyFQ6f/zlgPModogmeNozT6cKB6qbNZ8MV4YJuqo6eAjR/G19xwG6BKknCfc5GgA3syf8SF7HUWg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\PanSt\\CorFlow-DICOM-WADO-QUARY-5\\CorFlow-Backend\\Presentation\\Presentation.csproj",
+  "projectFilePath": "C:\\Users\\PanSt\\CorFlow-DICOM-WADO-QUARY\\CorFlow-Backend\\Presentation\\Presentation.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\PanSt\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.1\\microsoft.extensions.dependencyinjection.abstractions.8.0.1.nupkg.sha512"
   ],
