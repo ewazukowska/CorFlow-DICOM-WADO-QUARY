@@ -32,8 +32,6 @@ export class FilterFormComponent implements OnInit {
   filters: any = {
     frames: 32,
     age: 30,
-    x: 7,
-    y: 333,
     width: 58,
     height: 87,
     dominance: 'RIGHT',
@@ -45,9 +43,6 @@ export class FilterFormComponent implements OnInit {
 
   // Ranges
   ageRange = { min: 0, max: 100 };
-  frameRange = { min: 0, max: 100 };
-  xRange = { min: 0, max: 500 };
-  yRange = { min: 0, max: 500 };
   widthRange = { min: 0, max: 200 };
   heightRange = { min: 0, max: 200 };
   occlusionAgeRange = { min: 0, max: 200 };
@@ -55,9 +50,6 @@ export class FilterFormComponent implements OnInit {
   syntaxScoreRange = { min: 0, max: 200 };
 
   ageOptions: Options = { floor: 0, ceil: 100 };
-  frameOptions: Options = { floor: 0, ceil: 100 };
-  xOptions: Options = { floor: 0, ceil: 500 };
-  yOptions: Options = { floor: 0, ceil: 500 };
   widthOptions: Options = { floor: 0, ceil: 200 };
   heightOptions: Options = { floor: 0, ceil: 200 };
   occlusionAgeOptions: Options = { floor: 0, ceil: 200 };
@@ -65,24 +57,20 @@ export class FilterFormComponent implements OnInit {
   syntaxScoreOptions: Options = { floor: 0, ceil: 200 };
 
 
+  //What should be in this method?
   ngOnInit() {
-    this.loadFilters();
-  }
-
-  updateRangeValue(event: any, attribute: string) {
-    // @ts-ignore
-    this[attribute] = event.target.value;
+    // this.loadFilters();
   }
 
   @HostListener('document:keydown.enter', ['$event'])
   handleEnterKey(event: KeyboardEvent) {
-    console.log('Wciśnięto klawisz Enter');
+    console.log('Enter key pressed ');
     this.filterQuery();
   }
 
   filterQuery() {
     console.log('Submit pressed');
-    this.apiService.postJson(this.filters).subscribe({
+    this.apiService.getLesion(this.filters).subscribe({
       next: (results: any) => {
         console.log("Filter search results:", results);
         this.responseList = results;
@@ -94,24 +82,34 @@ export class FilterFormComponent implements OnInit {
     console.log("Filters sent");
   }
 
-  saveFilters(filters: any) {
-    localStorage.setItem('filters', JSON.stringify(filters));
-  }
 
-  loadFilters() {
-    const savedFilters = localStorage.getItem('filters');
-    if (savedFilters) {
-      this.filters = JSON.parse(savedFilters) as Filters;
-    }
-  }
 
-  exportFilters() {
-    const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(this.filters));
-    const downloadAnchorNode = document.createElement('a');
-    downloadAnchorNode.setAttribute("href", dataStr);
-    downloadAnchorNode.setAttribute("download", "filters.json");
-    document.body.appendChild(downloadAnchorNode);
-    downloadAnchorNode.click();
-    downloadAnchorNode.remove();
-  }
+
+
+  // updateRangeValue(event: any, attribute: string) {
+  //   // @ts-ignore
+  //   this[attribute] = event.target.value;
+  // }
+
+  // saveFilters(filters: any) {
+  //   localStorage.setItem('filters', JSON.stringify(filters));
+  // }
+  //
+  // loadFilters() {
+  //   const savedFilters = localStorage.getItem('filters');
+  //   if (savedFilters) {
+  //     this.filters = JSON.parse(savedFilters) as Filters;
+  //   }
+  // }
+
+  // exportFilters() {
+  //   const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(this.filters));
+  //   const downloadAnchorNode = document.createElement('a');
+  //   downloadAnchorNode.setAttribute("href", dataStr);
+  //   downloadAnchorNode.setAttribute("download", "filters.json");
+  //   document.body.appendChild(downloadAnchorNode);
+  //   downloadAnchorNode.click();
+  //   downloadAnchorNode.remove();
+  // }
+
 }

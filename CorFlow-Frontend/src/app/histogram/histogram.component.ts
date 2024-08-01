@@ -28,7 +28,7 @@ Chart.register(...registerables);
   styleUrl: './histogram.component.css'
 })
 export class HistogramComponent {
-  selectedVariable: string= 'ewa';
+  selectedVariable: string= '';
   variables: string[] =  ['age', 'width', 'height', 'dominance', 'sex', 'occlusionAge', 'occlusionLength', 'syntaxScore']
 
 
@@ -49,18 +49,19 @@ onConfirm(): void {
 }
 
 drawHistogram(variable: string): void {
-  const data = this.getDataForVariable(variable); // Implement this method to get data for the selected variable
+  const data = this.getDataForHistogram(variable); // All data for selected variable
+
 
   const chartData: ChartConfiguration<'bar'> = {
   type: 'bar',
   data: {
-    labels: data.labels, // Replace with actual labels
+    labels: data.labels, // to be replacd with actual labels
     datasets: [
       {
         label: variable,
-        data: data.values, // Replace with actual data
-        backgroundColor: 'rgba(188, 143, 143, 0.2)', // Kolor tła słupków #BC8F8F
-        borderColor: 'rgba(128, 0, 0, 1)', // Kolor obramowania słupków #800000
+        data: data.values, // to be replaced with actual data
+        backgroundColor: 'rgba(188, 143, 143, 0.2)',
+        borderColor: 'rgba(128, 0, 0, 1)',
         borderWidth: 1
       }
     ]
@@ -80,7 +81,7 @@ drawHistogram(variable: string): void {
 new Chart('histogramCanvas', chartData);
 }
 
-getDataForVariable(variable: string): { labels: string[], values: number[] } {
+getDataForHistogram(variable: string): { labels: string[], values: number[] } {
   // Implement your logic to get data based on the selected variable
   // For example purposes, returning dummy data
   return {

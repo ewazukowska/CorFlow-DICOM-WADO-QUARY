@@ -9,18 +9,18 @@ import { Lesion } from '../models/lesions.model';
   providedIn: 'root'
 })
 export class ApiService {
-  private apiUrl = "http://localhost:5021";
-  private dummyEndpoint = "dummy/lesions";
+  //private apiUrl = "http://localhost:5021";
+  private dummyEndpoint = "api/dummy/lesions";
 
   constructor(private http: HttpClient) {}
 
-  postJson(filters: Filters | null): Observable<any> {
+  getLesion(filters: Filters | null): Observable<any> {
     const headers = new HttpHeaders({
       'Content-Type': 'application/json',
       'Accept': 'application/json',
     });
 
-    return this.http.get<Lesion[]>(`${this.apiUrl}/${this.dummyEndpoint}`, { headers })
+    return this.http.get<Lesion[]>(`${this.dummyEndpoint}`, { headers }) // Thanks to proxy file configuration
       .pipe(
         catchError(this.handleError)
       );

@@ -24,12 +24,7 @@ import { NgChartsModule } from 'ng2-charts';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    HomeComponent,
-    QueryFormComponent,
-    ResultComponent,
-    FilterFormComponent,
-    HistogramComponent
+
   ],
   imports: [
     RouterModule,
@@ -44,9 +39,15 @@ import { NgChartsModule } from 'ng2-charts';
     MatFormFieldModule,
     MatInputModule,
     MatSelectModule,
-    FormsModule
+    FormsModule,
+    AppComponent,
+    HomeComponent,
+    FilterFormComponent,
+    HistogramComponent,
+    ResultComponent,
+    QueryFormComponent
   ],
-  bootstrap: [AppComponent]
+  //bootstrap: [AppComponent],
   providers: [
   ]
 })
