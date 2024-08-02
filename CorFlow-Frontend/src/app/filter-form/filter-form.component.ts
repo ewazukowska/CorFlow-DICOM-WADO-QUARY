@@ -6,9 +6,8 @@ import {FormsModule} from "@angular/forms";
 import { ApiService } from '../services/api.service';
 import {NgxSliderModule, Options} from "@angular-slider/ngx-slider";
 import {HttpClientModule} from "@angular/common/http";
-import { Filters } from '../models/filters.model';
-import { error } from 'console';
-import { map } from 'rxjs';
+import {DataService} from "../shared/data.service";
+
 
 @Component({
   selector: 'app-filter-form',
@@ -27,7 +26,7 @@ export class FilterFormComponent implements OnInit {
 
   public responseList: any[] = []
 
-  constructor(public router: Router, public apiService: ApiService) { }
+  constructor(public router: Router, public apiService: ApiService, private dataService: DataService) { }
 
   filters: any = {
     frames: 32,
@@ -74,6 +73,7 @@ export class FilterFormComponent implements OnInit {
       next: (results: any) => {
         console.log("Filter search results:", results);
         this.responseList = results;
+        this.dataService.updateResponseList(this.responseList);
       },
       error: (error) => {
         console.error("Filter search failed:", error);

@@ -2,7 +2,6 @@ import { Component, HostListener } from '@angular/core';
 import { Router, RouterOutlet } from "@angular/router";
 import { ApiService } from '../services/api.service';
 import { Filters } from '../models/filters.model';
-import { map } from 'rxjs';
 import { Lesion } from '../models/lesions.model';
 
 @Component({

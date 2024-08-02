@@ -37,7 +37,6 @@ export class ResultComponent {
         { key: 'Detail 3', value: 'Value 3' }
       ]
     },
-    // Dodaj więcej obiektów według potrzeby
   ];
   constructor(public dialog: MatDialog) {
 
@@ -54,14 +53,12 @@ export class ResultComponent {
 
   showHistogram() {
     const dialogRef = this.dialog.open(HistogramComponent, {
-      width: '400px', // Adjust width here
-      height: '500px', // Adjust height here
+      width: '400px',
+      height: '500px',
 
     });
-
     dialogRef.afterClosed().subscribe(result => {
       if (result) {
-        // Tutaj dodaj logikę wyświetlenia histogramu dla wybranego parametru
         console.log('Selected variable:', result);
       }
     });

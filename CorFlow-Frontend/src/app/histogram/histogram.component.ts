@@ -83,7 +83,6 @@ new Chart('histogramCanvas', chartData);
 
 getDataForHistogram(variable: string): { labels: string[], values: number[] } {
   // Implement your logic to get data based on the selected variable
-  // For example purposes, returning dummy data
   return {
     labels: ['A', 'B', 'C', 'D', 'E'],
     values: [10, 20, 30, 40, 50]

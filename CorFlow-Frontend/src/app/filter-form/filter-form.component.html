@@ -79,6 +79,12 @@
           Heavy Calcification
         </label>
       </div>
+    <div class="form-checkbox-group">
+      <label class="form-checkbox">
+        <input type="checkbox" name="filterOcclusionAge" value="totalOcclusionAge">
+        Occlusion Age
+      </label>
+    </div>
       <div class="form-checkbox-group">
         <label class="form-checkbox">
           <input type="checkbox" name="filterThrombus" value="thrombus">
@@ -126,14 +132,6 @@
         Height
         <div class="custom-slider">
         <ngx-slider [(value)]="filters.height" [(highValue)]="heightRange.max" [options]="heightOptions"></ngx-slider>
-        </div>
-      </label>
-    </div>
-    <div class="form-checkbox-group">
-      <label class="form-label">
-        Occlusion Age
-        <div class="custom-slider">
-        <ngx-slider [(value)]="filters.occlusionAge" [(highValue)]="occlusionAgeRange.max" [options]="occlusionAgeOptions"></ngx-slider>
         </div>
       </label>
     </div>
