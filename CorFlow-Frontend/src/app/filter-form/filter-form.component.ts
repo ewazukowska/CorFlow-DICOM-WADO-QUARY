@@ -44,14 +44,12 @@ export class FilterFormComponent implements OnInit {
   ageRange = { min: 0, max: 100 };
   widthRange = { min: 0, max: 200 };
   heightRange = { min: 0, max: 200 };
-  occlusionAgeRange = { min: 0, max: 200 };
   occlusionLengthRange = { min: 0, max: 200 };
   syntaxScoreRange = { min: 0, max: 200 };
 
   ageOptions: Options = { floor: 0, ceil: 100 };
   widthOptions: Options = { floor: 0, ceil: 200 };
   heightOptions: Options = { floor: 0, ceil: 200 };
-  occlusionAgeOptions: Options = { floor: 0, ceil: 200 };
   occlusionLengthOptions: Options = { floor: 0, ceil: 200 };
   syntaxScoreOptions: Options = { floor: 0, ceil: 200 };
 

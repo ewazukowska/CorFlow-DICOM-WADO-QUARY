@@ -1,8 +1,10 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {CommonModule, NgOptimizedImage} from "@angular/common";
 import {FormsModule} from "@angular/forms";
 import {HistogramComponent} from "../histogram/histogram.component";
 import {MatDialog} from "@angular/material/dialog";
+import { DataService } from '../shared/data.service';
+import { Lesion } from '../models/lesions.model';
 
 @Component({
   selector: 'app-result',
@@ -12,43 +14,50 @@ import {MatDialog} from "@angular/material/dialog";
   styleUrl: './result.component.scss'
 })
 
-export class ResultComponent {
+export class ResultComponent implements OnInit {
   currentIndex: number = 0;
-  studyId: number = 35;
-  numberOfStudies: number = 287;
+  id: any;
+  numberOfStudies: any;
   patientId: any;
+  dataList: Lesion[] = [];
 
-  dataList = [
-    {
-      title: 'Item 1',
-      description: 'This is the description for item 1.',
-      info: [
-        { key: 'Detail 1', value: 'Value 1' },
-        { key: 'Detail 2', value: 'Value 2' },
-        { key: 'Detail 3', value: 'Value 3' }
-      ]
-    },
-    {
-      title: 'Item 2',
-      description: 'This is the description for item 2.',
-      info: [
-        { key: 'Detail 1', value: 'Value 1' },
-        { key: 'Detail 2', value: 'Value 2' },
-        { key: 'Detail 3', value: 'Value 3' }
-      ]
-    },
-  ];
-  constructor(public dialog: MatDialog) {
+  constructor(public dialog: MatDialog, private dataService: DataService) {}
 
+  ngOnInit(): void {
+    this.dataService.currentResponseList.subscribe(data => {
+      this.dataList = data;
+      this.updatePatientInfo();
+    });
   }
+
+  updatePatientInfo() {
+    if (this.dataList.length > 0) {
+      this.patientId = this.dataList[this.currentIndex].attributes.globalId || '';
+      this.numberOfStudies = this.dataList.length;
+      this.id = this.dataList[this.currentIndex].id || '';
+    }
+  }
+
+
+
 
 
   prevSlide() {
-    this.currentIndex = (this.currentIndex > 0) ? this.currentIndex - 1 : this.dataList.length - 1;
+    if (this.currentIndex > 0) {
+      this.currentIndex--;
+    } else {
+      this.currentIndex = this.dataList.length - 1;
+    }
+    this.updatePatientInfo();
   }
 
   nextSlide() {
-    this.currentIndex = (this.currentIndex < this.dataList.length - 1) ? this.currentIndex + 1 : 0;
+    if (this.currentIndex < this.dataList.length - 1) {
+      this.currentIndex++;
+    } else {
+      this.currentIndex = 0;
+    }
+    this.updatePatientInfo();
   }
 
   showHistogram() {

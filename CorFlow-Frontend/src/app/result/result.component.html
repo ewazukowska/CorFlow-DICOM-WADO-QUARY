@@ -2,35 +2,62 @@
   <div class="data-container">
     <button class="prev" (click)="prevSlide()">❮ Prev</button>
     <div class="data-slider">
-      <!-- Data cards will be dynamically generated here -->
       <div class="data-card" *ngFor="let data of dataList; let i = index" [style.display]="currentIndex === i ? 'block' : 'none'">
-        <tr>
-          <th>Check Patient:  </th>
-          <td><input type="text" [(ngModel)]="patientId"></td>
-        </tr>
-        <tr>
-          <th>Number of studies:  </th>
-          <td>{{ numberOfStudies }}</td>
-        </tr>
-        <tr>
-          <th>Study ID:  </th>
-          <td>{{ studyId }}</td>
-        </tr>
-        <h2>{{data.title}}</h2>
         <table>
           <tr>
-            <th>Description</th>
-            <td>{{data.description}}</td>
+            <th>Check Patient: </th>
+            <td><input type="text" [(ngModel)]="patientId" readonly></td>
           </tr>
-          <tr *ngFor="let info of data.info">
-            <th>{{info.key}}</th>
-            <td>{{info.value}}</td>
+          <tr>
+            <th>Number of studies: </th>
+            <td>{{ numberOfStudies }}</td>
           </tr>
-          <!-- Dodaj nowe pola tutaj -->
+          <tr>
+            <th>Study ID: </th>
+            <td>{{ id }}</td>
+          </tr>
+        </table>
+        <h2>{{ data.id }}</h2>
+        <table>
+          <tr>
+            <th>Type</th>
+            <td>{{ data.type }}</td>
+          </tr>
+          <tr>
+            <th>Global ID</th>
+            <td>{{ data.attributes.globalId }}</td>
+          </tr>
+          <tr>
+            <th>Frame</th>
+            <td>{{ data.attributes.frame }}</td>
+          </tr>
+          <tr>
+            <th>X</th>
+            <td>{{ data.attributes.x }}</td>
+          </tr>
+          <tr>
+            <th>Y</th>
+            <td>{{ data.attributes.y }}</td>
+          </tr>
+          <tr>
+            <th>Width</th>
+            <td>{{ data.attributes.width }}</td>
+          </tr>
+          <tr>
+            <th>Height</th>
+            <td>{{ data.attributes.height }}</td>
+          </tr>
+          <tr>
+            <th>Dominance</th>
+            <td>{{ data.attributes.dominance }}</td>
+          </tr>
+          <tr>
+            <th>Total Occlusion</th>
+            <td>{{ data.attributes.totalOcclusion }}</td>
+          </tr>
+          <!-- and others -->
         </table>
         <button (click)="showHistogram()">See Histogram</button>
-        <!-- Histogram wyświetlający rozrzut na parametrach które nie zostały wybrane -->
-        <!-- Tutaj możesz dodać element histogramu -->
       </div>
     </div>
     <button class="next" (click)="nextSlide()">Next ❯</button>
