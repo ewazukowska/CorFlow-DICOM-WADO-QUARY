@@ -7,7 +7,7 @@ import { HomeComponent } from "./home/home.component";
 import { QueryFormComponent } from './query-form/query-form.component';
 import { ResultComponent } from "./result/result.component";
 import { CommonModule } from "@angular/common";
-import { HttpClientModule } from '@angular/common/http';
+import {HttpClientModule, provideHttpClient, withFetch} from '@angular/common/http';
 import { NgxSliderModule } from '@angular-slider/ngx-slider';
 import { FilterFormComponent } from './filter-form/filter-form.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -24,12 +24,7 @@ import { NgChartsModule } from 'ng2-charts';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    HomeComponent,
-    QueryFormComponent,
-    ResultComponent,
-    FilterFormComponent,
-    HistogramComponent
+
   ],
   imports: [
     RouterModule,
@@ -44,10 +39,17 @@ import { NgChartsModule } from 'ng2-charts';
     MatFormFieldModule,
     MatInputModule,
     MatSelectModule,
-    FormsModule
+    FormsModule,
+    AppComponent,
+    HomeComponent,
+    FilterFormComponent,
+    HistogramComponent,
+    ResultComponent,
+    QueryFormComponent
   ],
-  bootstrap: [AppComponent]
+  //bootstrap: [AppComponent],
   providers: [
+    provideHttpClient(withFetch())
   ]
 })
 export class AppModule { }

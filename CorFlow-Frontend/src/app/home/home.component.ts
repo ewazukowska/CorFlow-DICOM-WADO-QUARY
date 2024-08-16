@@ -33,7 +33,7 @@ export class HomeComponent {
   navigateToFilterForm() {
     this.router.navigate(['filter-form']).then((success) => {
       if (success) {
-        console.log('Navigated to query-form successfully!');
+        console.log('Navigated to filter-form successfully!');
       } else {
         console.log('Navigation failed!');
       }

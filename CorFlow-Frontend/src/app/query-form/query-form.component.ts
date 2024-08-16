@@ -2,7 +2,6 @@ import { Component, HostListener } from '@angular/core';
 import { Router, RouterOutlet } from "@angular/router";
 import { ApiService } from '../services/api.service';
 import { Filters } from '../models/filters.model';
-import { map } from 'rxjs';
 import { Lesion } from '../models/lesions.model';
 
 @Component({
@@ -17,8 +16,6 @@ import { Lesion } from '../models/lesions.model';
 export class QueryFormComponent {
   public filters: Filters = {
     frames: 0,
-    x: 0,
-    y: 0,
     width: 0,
     height: 0,
     dominance: '',
@@ -38,7 +35,7 @@ export class QueryFormComponent {
   }
 
   public submitQuery(): void {
-    this.apiService.postJson(this.filters).subscribe({
+    this.apiService.getLesion(this.filters).subscribe({
       next: (results) => {
         console.log('Query search results:', results);
         this.responseList = results;
