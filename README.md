@@ -10,19 +10,9 @@ Project is designed to simplify access, processing, and management of medical im
 
 ## Installation
 1. Clone this repository to your local computer.
-2. Install the required dependencies by running `npm install` or `pip install -r requirements.txt`, depending on the technology used.
-3. Start the application server by entering the appropriate command in the terminal.
-4. Open the application in a web browser by typing the local address in the address bar.
-
-## Configuration
-1. Set the appropriate configuration parameters in the `config.json` file, such as the server port, database address, etc.
-2. Configure the database connection using the appropriate authentication credentials.
-
-## Usage
-1. Start the application server by running the appropriate command in the terminal.
-2. Open a web browser and enter the local server address.
-3. Log in to the application if required.
-4. Utilize the application features through the graphical user interface.
+2. Install the required frontend dependencies by running `npm install`.
+3. Set the database configuration parameters in the `appsettings.json` file.
+4. Start the application backend container with `docker compose`.
 
 ## Authors
 - [Ewa Żukowska](ezukowska@student.agh.edu.pl)
